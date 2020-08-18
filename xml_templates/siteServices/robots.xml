@@ -1,0 +1,7 @@
+<template name="robots.txt">
+
+    <field name="disallow" type="array">
+        <field name="link" type="objectlink" />
+    </field>
+
+</template>

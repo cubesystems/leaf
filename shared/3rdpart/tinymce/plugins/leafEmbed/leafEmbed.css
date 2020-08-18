@@ -1,0 +1,7 @@
+body .embedObject
+{
+	border: 1px solid #7e7e7e;
+	background: #b0e0e6 url(img/play.png) no-repeat center center;
+	border-radius: 4px;
+	display: block;
+}

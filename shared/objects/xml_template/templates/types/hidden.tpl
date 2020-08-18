@@ -1,0 +1,1 @@
+<input type="hidden" name="{$field.input_name|escape}" value="{$field.value|escape}" />

@@ -1,0 +1,1 @@
+{$_module->getModuleUrl()}&amp;do={$_module->getListViewAction()}&amp;id={$item->id}&amp;listUrl={request_url remove=ajax encode=true}{if $_module->getListViewAction() == 'edit'}&amp;returnUrl={request_url remove=ajax encode=true}{/if}

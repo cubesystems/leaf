@@ -1,0 +1,16 @@
+.clearInside
+{
+	zoom: 1;
+}
+
+
+.module-aliases .footer button
+{
+    overflow: visible;
+}
+
+#objectsSidebar
+{
+    overflow: hidden;
+}
+

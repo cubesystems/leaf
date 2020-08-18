@@ -1,0 +1,132 @@
+.linkDialog .ui-dialog-content
+{
+	padding: 0;
+	margin: 4px 1px 15px 1px;
+	font-size: 0.9em;
+}
+
+/* content tree */
+.content-tree-wrap
+{
+	line-height: 25px;
+}
+.content-tree-wrap ul
+{
+	margin: 0;
+	padding: 0;
+}
+.content-tree-wrap ul img
+{
+	vertical-align: -10%;
+}
+.content-tree-wrap .expand-tool
+{
+	float: left;
+	width: 20px;
+	height: 25px;
+	padding-left: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/objectlink/open.gif);
+	cursor: pointer;
+}
+.content-tree-wrap .expand-tool.open
+{
+	background-image: url(../images/objectlink/close.gif);
+}
+.content-tree-wrap .expand-tool:hover
+{
+	background-color: #87C771;
+}
+.content-tree-wrap .no-children .expand-tool
+{
+	background: transparent none;
+}
+.content-tree-wrap .node
+{
+	display: block;
+	cursor: pointer;
+	spadding: 2px 3px 0 3px;
+}
+.content-tree-wrap .children.unloaded
+{
+	display: none;
+}
+.content-tree-wrap .loading .icon-wrap
+{
+	background: transparent url(../images/objectlink/loader.gif) no-repeat center center;
+}
+.content-tree-wrap .loading .icon
+{
+	opacity: 0;
+}
+.content-tree-wrap .root > li
+{
+	min-width: 200px;
+}
+.content-tree-wrap li li .node
+{
+	padding-left: 15px;
+}
+.content-tree-wrap li li li .node
+{
+	padding-left: 30px;
+}
+.content-tree-wrap li li li li .node
+{
+	padding-left: 45px;
+}
+.content-tree-wrap li li li li li .node
+{
+	padding-left: 60px;
+}
+.content-tree-wrap li li li li li li .node
+{
+	padding-left: 75px;
+}
+.content-tree-wrap li li li li li li li .node
+{
+	padding-left: 90px;
+}
+.content-tree-wrap li .node
+{
+	min-height: 25px;
+	border-bottom: 1px solid #fff;
+	background-color: #bce0b2;
+}
+.content-tree-wrap .node:hover
+{
+	background-color:#e0e0e0;
+}
+.content-tree-wrap .node.selected
+{
+	background-color:#d0d0d0;
+}
+.content-tree-wrap li li .node
+{
+	background-color:#d1eaca;
+}
+.content-tree-wrapli li li .node
+{
+	background-color:#e6f3e1;
+}
+.content-tree-wrap li li li li .node
+{
+	background-color:#f2f9f1;
+}
+.content-tree-wrap li li li li li .node
+{
+	background-color:#fbfdfa;
+}
+.content-tree-wrap li li li li li li .node
+{
+	background-color:#fbfdfa;
+}
+.content-tree-wrap li li li li li li li .node
+{
+	background-color:#fbfdfa;
+}
+.content-tree-wrap > ul > li:last-child .node
+{
+	border-bottom: 0;
+}

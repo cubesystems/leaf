@@ -1,0 +1,28 @@
+.leafFile-field-wrap .leafFile-preview-wrap
+{
+    display: none;
+}
+
+.field-has-leafFile .leafFile-preview-wrap
+{
+    display: block;
+}
+
+.leafFile-field-wrap .leafFile-input-wrap
+{
+    display: inline;
+}
+
+.field-has-leafFile .leafFile-input-wrap
+{
+    display: none;
+}
+
+button.removeFileButton
+{
+	background: transparent none;
+	border: 0;
+	padding: 0;
+    margin: 0;
+    vertical-align: -20%;
+}

@@ -1,0 +1,5 @@
+<template>
+<field name="skip" type="array">
+	<field type="objectlink" name="object" />
+</field>
+</template>

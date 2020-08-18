@@ -1,0 +1,123 @@
+.objectTreeNodeOpen, .objectTreeNodeClose{
+	float:left;
+	height:9px;
+	width:9px;
+	margin:5px 3px 0 0;
+	background: no-repeat top left;
+}
+.objectTreeNodeOpen{
+	background-image:url(images/open.gif);
+}
+.objectTreeNodeClose{
+	background-image:url(images/close.gif);
+}
+
+#insertBlock{
+	float:left;
+	width:320px;
+}
+#mainLeafContent{
+	margin:0;
+}
+#managerContent{
+	border-collapse:collapse;
+	width:100%;
+}
+#files{
+	margin:4px 0 0 0;
+	height:320px;
+	width:340px;
+	overflow:auto;
+}
+#insertBlock{
+	padding:6px;
+}
+#previewParent{
+	margin:0 0 0 255px;
+	height:300px;
+	text-align:center;
+	background-color:#efefef;
+}
+#preview{
+	overflow:auto;
+	height:300px;
+}
+#imageInsertTable{
+	border-top:1px solid #aaa;
+
+	clear:both;
+	border-collapse:collapse;
+	float: left;
+}
+#imageInsertTable td{
+	vertical-align:top;
+}
+#imageManager{
+	height:500px;
+}
+#objectTree{
+	height:200px;
+	padding:2px 0 0 0;
+	overflow:auto;
+	width:250px;
+}
+#imageManager #objectTree{
+	height:300px;
+	float:left;
+}
+#objectTree input{
+	border:none;
+}
+#objectTree ul, li{
+	list-style:none;
+}
+#objectTree li{
+	padding:0;
+	margin:0;
+}
+#objectTree ul{
+	padding:0;
+	margin:0 0 0 15px;
+}
+#frmSearch
+{
+	border-top:1px solid #aaa;
+	margin-left: 360px;
+}
+#search_suggest
+{
+    position: relative;
+    height: 160px;
+    overflow: auto;
+
+}
+#search_suggest *
+{    position: relative;
+
+}
+#linkManager .entry{
+	clear:both;
+	margin	:4px 0;
+}
+#linkManager .entry label{
+	float:left;
+	width:80px;
+	text-align:right;
+	padding:0 7px 0 0;
+}
+#linkManager #linkBlock{
+	float:left;
+	width:250px;
+}
+#linkManager #objectTree{
+	float:right;
+	width:320px;
+	overflow:auto;
+	height:400px;
+}
+#linkManager #btnBlock{
+	margin:12px 0 0 90px;
+}
+#linkManager #targetBlock{
+	display:none;
+}

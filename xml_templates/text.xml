@@ -1,0 +1,3 @@
+<template name="Teksts" table="yes">
+<field type="richtext" name="text"  searchable="yes" />
+</template>

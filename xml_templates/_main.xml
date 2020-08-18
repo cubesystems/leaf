@@ -1,0 +1,23 @@
+<template>
+	<common_field type="text" name="pageDescription" description="Lapas apraksts (META description)" >
+    	<affected_templates>
+			<include name="*" />
+			<exclude name="file" />
+			<exclude name="siteServices/robots" />
+			<exclude name="siteServices/sitemap" />
+		</affected_templates>
+	</common_field>
+	<rules>
+		<object name="language_root"> 
+			<child_allow name="group" />
+			<child_allow name="text" />
+		</object>
+		<object name="text">
+			<child_allow name="text" />
+			<parent_allow name="group" />
+		</object>
+		<object name="file">
+			<parent_allow name="text" />
+		</object>
+	</rules>
+</template>

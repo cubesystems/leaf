@@ -1,0 +1,29 @@
+.module-automators select.shortSelect
+{
+    width: 100px;
+}
+.module-automators input.datetimeValue
+{
+    width: 170px;
+}
+.module-automators input.intValue, input.moneyValue
+{
+    width: 80px;
+}
+.module-automators .list
+{
+  padding: 0 20px;
+}
+.module-automators .input
+{
+    display: inline-block;
+}
+.module-automators .footer .resetLink
+{
+	margin-left: 10px;
+}
+.module-automators .yui-skin-sam .yui-ac-content
+{
+	width: auto;
+    min-width: 100%;
+}

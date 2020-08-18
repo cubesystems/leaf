@@ -1,0 +1,104 @@
+.mceLinkList, .mceAnchorList, #targetlist {width:220px;}
+.mceActionPanel {margin-top:7px;}
+.panel_wrapper div.current {height:320px;} /* 320 */
+#classlist, #title, #href {width:220px;}
+#popupurl, #popupname {width:200px;}
+#popupwidth, #popupheight, #popupleft, #popuptop {width:30px;vertical-align:middle;text-align:center;}
+#id, #style, #classes, #target, #dir, #hreflang, #lang, #charset, #type, #rel, #rev, #tabindex, #accesskey {width:200px;}
+#events_panel input {width:200px;}
+
+/* global */
+
+.tabs .title 
+{
+	text-decoration:none; 
+	font-family:Verdana, Arial; 
+	font-size:10px;
+}
+.tabs .title 
+{
+	color:black;
+}
+.panel_wrapper
+{
+	height: 310px;
+}
+.normal_weight
+{
+	font-weight: normal;
+}
+
+/* leafLink */
+
+#advlink
+{
+	min-width: 600px;
+	position: relative;
+}
+#advlink form
+{
+	width: 50%;
+	min-width: 320px;
+}
+.variable_height
+{
+	height: 100%;
+	min-height: inherit;
+}
+#leafLinkBrowser
+{
+	width: 47%;
+	min-height: 125px;
+	position: absolute;
+	right: 0;
+}
+
+a img
+{
+	border: 0;
+}
+#objectTree
+{
+	height: 310px;
+	overflow: auto;
+}
+#objectTree a
+{
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+#objectTree li
+{
+	padding: 1px 0 1px 0;
+	display: block;
+	margin: 0;
+}
+#objectTree ul
+{
+	padding:0;
+	margin:0 0 0 15px;
+}
+#objectTree .noChildren
+{
+	padding-left: 12px;
+}
+#objectTree a
+{
+	
+}
+
+.objectTreeNodeOpen, .objectTreeNodeClose{
+	float:left;
+	height:9px;
+	width:9px;
+	margin:5px 3px 0 0;
+	background: no-repeat top left;
+}
+.objectTreeNodeOpen{
+	background-image: url('../img/open.gif');
+}
+.objectTreeNodeClose{
+	background-image:url('../img/close.gif');
+}
+

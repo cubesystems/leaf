@@ -1,0 +1,878 @@
+#objectsSidebar{
+	height: 100%;
+}
+#contentModule{
+}
+#loading{
+	top:0;
+	left:0;
+	position:absolute;
+	display:none;
+	background-color:#fff;
+	padding:4px;
+	border:1px solid #999;
+}
+/* objects toolbar */
+#objectTools{
+	height:30px;
+}
+#objectTools li{
+	display:inline;
+}
+#objectTools button{
+	width:32.6%;
+	margin-right: 1%;
+}
+#objectTools li.last button
+{
+	margin-right: 0;
+}
+
+/* objects tree */
+.objectsTreeWrap
+{
+	position: absolute;
+	top: 37px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+
+	border: 1px solid #ABABAB;
+	border-width: 1px 1px 0 0;
+	outline: none;
+}
+#objectsTree ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#objectsTree li{
+	padding:0;
+	margin:0;
+	clear:both;
+	display:block;
+}
+.objectsTree .notAllowed > div > .objectHref
+{
+    /*
+    opacity: 0.4;
+    */
+}
+
+.objectsTree img.iconOverlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* fix ie bug (trigger hasLayout), dirty sanchez!!!!! */
+* html #objectsTree li{
+	display:inline-block;
+}
+#objectsTree .objectLiDiv:hover{
+	background-color:#e0e0e0;
+}
+#objectsTree li .objectLiDiv{
+	min-height:25px;
+	border-bottom:1px solid #fff;
+	background-color:#bce0b2;
+}
+* html #objectForm li .objectLiDiv{
+	height:25px;
+}
+#objectsTree li li .objectLiDiv{
+	background-color:#d1eaca;
+}
+#objectsTree li li .groupBox{
+	margin:0 0 0 15px;
+}
+
+#objectsTree li li li .objectLiDiv{
+	background-color:#e6f3e1;
+}
+#objectsTree li li li .groupBox{
+	margin:0 0 0 30px;
+}
+
+#objectsTree li li li li .objectLiDiv{
+	background-color:#f2f9f1;
+}
+#objectsTree li li li li .groupBox{
+	margin:0 0 0 45px;
+}
+
+#objectForm li li li li li .objectLiDiv{
+	background-color:#fbfdfa;
+}
+#objectsTree li li li li li .groupBox{
+	margin:0 0 0 60px;
+}
+
+
+#objectForm li li li li li li .objectLiDiv{
+	background-color:#fbfdfa;
+}
+#objectsTree li li li li li li .groupBox{
+	margin:0 0 0 75px;
+}
+
+
+#objectForm li li li li li li li .objectLiDiv{
+	background-color:#fbfdfa;
+}
+#objectsTree li li li li li li li .groupBox{
+	margin:0 0 0 90px;
+}
+
+
+
+#objectForm .objectCheck{
+	float:left;
+	display:block;
+	width: 23px;
+	height: 20px;
+	text-align: right;
+	padding-top: 3px;
+
+	/*
+	background:url(img/checkboxOff.png) no-repeat center;
+	*/
+}
+#objectForm .objectCheckDisabled
+{
+    background: none;
+}
+#objectForm .objectCheckOn
+{
+    /*
+    background:url(img/checkboxOn.png) no-repeat center;
+    */
+}
+#objectForm .objectCheck input
+{
+	border: none;
+    background: transparent;
+}
+#objectsTree .groupBox{
+	float:left;
+	width:20px;
+	background-repeat:no-repeat;
+	background-position:center;
+	height:25px;
+	border: none;
+	background-color: transparent;
+	border-radius: 0;
+	/* fix ie double margin bug */
+	display:inline;
+}
+#objectsTree a.groupBox:hover,
+#objectsTree button.groupBox:hover
+{
+	background-color:#87C771;
+}
+.objectsTree .groupBoxOpen{
+	background-image:url(img/open.gif);
+}
+.objectsTree .groupBoxClose{
+	background-image:url(img/close.gif);
+}
+.objectsTree .groupBox.loading
+{
+	background-image: url(../../images/loader.gif);
+}
+#objectsTree .objectHref{
+	display:block;
+	padding:2px 3px 0 3px;
+}
+#objectsTree .objectHref a{
+	text-decoration:none;
+	margin:0 1px;
+	color:#000;
+}
+#objectsTree .objectHref a:hover{
+	background:url(img/hrefLine.gif) repeat-x bottom left;
+	text-decoration:none;
+}
+#objectsTree .objectHref a img
+{
+	vertical-align: -20%;
+	margin-right: 4px;
+}
+#objectsTree .objectHref a img.flag
+{
+	vertical-align: -5%;
+}
+#objectsTree .objectHref .hidden{
+	color:#999;
+}
+
+#objectsTree .objectLiDiv.activeNodeWrap
+{
+	sbackground-color: black;
+}
+#objectsTree .objectLiDiv.activeNodeWrap a
+{
+	sfont-weight: normal;
+	scolor: white;
+}
+
+#objectForm .objectTools{
+	padding:0;
+	height:0;
+	border:1px solid red;
+	line-height:0;
+	font-size:0;
+	margin:8px 15px 0 0;
+	float:right;
+}
+#objectForm .objectPanelHref{
+	margin:4px 4px 0 0;
+	float:right;
+	opacity: .5;
+}
+#objectForm .objectLiDiv:hover .objectPanelHref{
+	opacity: 1;
+}
+#objectForm .activeObject{
+	font-weight:bold;
+}
+/* object panel */
+#objectPanel{
+	display:none;
+	position:absolute;
+}
+#objectPanel h3{
+	font-size:100%;
+	color:#fff;
+	padding:3px;
+	margin:0;
+}
+#objectPanel ul{
+	float:left;
+	width:120px;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#objectPanel li{
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#objectPanel a{
+	display:block;
+	border-left:1px solid #fff;
+	border-bottom:1px solid #fff;
+	padding:6px 5px 6px 24px;
+	background: #bce0b0 no-repeat 5px center;
+	display:block;
+}
+#objectPanel a:hover{
+	background-color:#FFCC66;
+	color:#fff !important;
+	text-decoration:none;
+}
+#objectPanel a span{
+	float:left;
+	width:20px;
+}
+
+
+/* object modules */
+
+#leafObjectModules
+{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    z-index: 999;
+	list-style:none;
+	padding:0;
+	margin:0;
+	text-align: right;
+}
+#leafObjectModules li
+{
+    display: inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+    padding-left: 10px;
+}
+
+/* quick and dirty positioning fix */
+#objectPanel, #loading
+{
+	margin-top: -59px;
+	box-shadow: 0px 2px 3px rgba(0,0,0,.8);
+}
+#objectPanel
+ {
+	margin-left: -9px;
+}
+#loading
+{
+	margin-left: 5px;
+}
+
+#moduleNameobject_access
+{
+	margin-right: 10px;
+}
+
+
+
+/* content tree */
+.content-tree-wrap
+{
+	line-height: 25px;
+}
+.content-tree-wrap ul
+{
+	margin: 0;
+	padding: 0;
+}
+.content-tree-wrap ul img
+{
+	vertical-align: -10%;
+}
+.content-tree-wrap .expand-tool
+{
+	float: left;
+	width: 20px;
+	height: 25px;
+	padding-left: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(img/open.gif);
+	cursor: pointer;
+}
+.content-tree-wrap .expand-tool.open
+{
+	background-image: url(img/close.gif);
+}
+.content-tree-wrap .expand-tool:hover
+{
+	background-color: #87C771;
+}
+.content-tree-wrap .no-children .expand-tool
+{
+	background: transparent none;
+}
+.content-tree-wrap .node
+{
+	display: block;
+	cursor: pointer;
+	spadding: 2px 3px 0 3px;
+}
+.content-tree-wrap .children.unloaded
+{
+	display: none;
+}
+.content-tree-wrap .loading .icon-wrap
+{
+	background: transparent url(../../images/loader.gif) no-repeat center center;
+}
+.content-tree-wrap .loading .icon
+{
+	opacity: 0;
+}
+.content-tree-wrap .root > li
+{
+	min-width: 200px;
+}
+.content-tree-wrap li li .node
+{
+	padding-left: 15px;
+}
+.content-tree-wrap li li li .node
+{
+	padding-left: 30px;
+}
+.content-tree-wrap li li li li .node
+{
+	padding-left: 45px;
+}
+.content-tree-wrap li li li li li .node
+{
+	padding-left: 60px;
+}
+.content-tree-wrap li li li li li li .node
+{
+	padding-left: 75px;
+}
+.content-tree-wrap li li li li li li li .node
+{
+	padding-left: 90px;
+}
+.content-tree-wrap li .node
+{
+	min-height: 25px;
+	border-bottom: 1px solid #fff;
+	background-color: #bce0b2;
+}
+.content-tree-wrap .node:hover
+{
+	background-color:#e0e0e0;
+}
+.content-tree-wrap .node.selected
+{
+	background-color:#d0d0d0;
+}
+.content-tree-wrap li li .node
+{
+	background-color:#d1eaca;
+}
+.content-tree-wrapli li li .node
+{
+	background-color:#e6f3e1;
+}
+.content-tree-wrap li li li li .node
+{
+	background-color:#f2f9f1;
+}
+.content-tree-wrap li li li li li .node
+{
+	background-color:#fbfdfa;
+}
+.content-tree-wrap li li li li li li .node
+{
+	background-color:#fbfdfa;
+}
+.content-tree-wrap li li li li li li li .node
+{
+	background-color:#fbfdfa;
+}
+.content-tree-wrap > ul > li:last-child .node
+{
+	border-bottom: 0;
+}
+
+
+
+
+
+
+.panelLayout.module-content .secondaryPanel
+{
+	width: 23%;
+}
+.module-content .secondaryPanel .actionsToolbar
+{
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: #DBDCDF #CECFD2 #C6C9D0;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	padding: 5px 5px 2px;
+	margin-bottom: 5px;
+}
+body .panelLayout.module-content .primaryPanel .content
+{
+	padding: 5px 5px 50px 5px;
+}
+
+/* relations */
+.module-content .primaryPanel .toggleRelationPanelButton
+{
+	float: right;
+}
+.module-content .primaryPanel .toggleRelationPanelButton img
+{
+	background: transparent url(../../images/icons/left_16.png) no-repeat top left;
+}
+.module-content .primaryPanel .showRelationPanel .toggleRelationPanelButton img
+{
+	background-image: url(../../images/icons/right_16.png);
+}
+.module-content .primaryPanel .showRelationPanel .content
+{
+	right: 230px;
+}
+.module-content .primaryPanel .relationsPanel
+{
+	display: none;
+	width: 195px;
+}
+.module-content .primaryPanel .showRelationPanel .relationsPanel
+{
+	display: block;
+	left: auto;
+	right: 10px;
+}
+.module-content .primaryPanel .relationsPanel .panelTitle
+{
+	color: #A6A6A6;
+	font-size: 11px;
+	letter-spacing: 0.3px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+}
+.module-content .primaryPanel .relationsPanel .loader
+{
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	margin: -8px 0 0 -8px;
+}
+.module-content .primaryPanel .relationsPanel .item
+{
+	margin-bottom: 2px;
+	padding: 1px 0px 1px 7px;
+	position: relative;
+}
+.module-content .primaryPanel .relationsPanel .item .knob
+{
+	position: absolute;
+	left: -6px;
+	top: 1px;
+}
+.module-content .primaryPanel .relationsPanel .languageRootName
+{
+	display: inline-block;
+	padding-bottom: 1px;
+	text-align: center;
+	min-width: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #bfbfbf;
+	text-shadow: 0px 1px 0px white;
+	margin-right: 2px;
+}
+.module-content .primaryPanel .relationsPanel .active .languageRootName
+{
+	color: white;
+	background-color: black;
+	text-shadow: none;
+	border-color: white;
+}
+.module-content .primaryPanel .relationsPanel .item em
+{
+	color: gray;
+}
+.module-content .primaryPanel .relationsPanel .item .create,
+.module-content .primaryPanel .relationsPanel .item .copy
+{
+	text-decoration: underline;
+	font-style: italic;
+}
+.module-content .primaryPanel .relationsPanel .item .copy
+{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-top: -1px;
+}
+.module-content .primaryPanel .relationsPanel .item .linkUp
+{
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	float: right;
+	margin-top: 4px;
+}
+.module-content .primaryPanel .relationsPanel .item .linkUp img
+{
+	margin: -9px 0 0 -3px;
+}
+.module-content .primaryPanel .relationsPanel .item a span,
+.module-content .primaryPanel .relationsPanel .item .or
+{
+	color: gray;
+}
+
+.module-content .primaryPanel .relationsPanel .createNewGroupWrap
+{
+
+}
+.module-content .primaryPanel .relationsPanel .createNewGroupWrap .createGroupMessage
+{
+	font-size: 1.5em;
+}
+.module-content .primaryPanel .relationsPanel .createNewGroupWrap .buttonWrap
+{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.linkUpDialog
+{
+	width: 230px;
+	min-height: 150px;
+	background: white none no-repeat center center;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
+	padding: 3px;
+}
+.linkUpDialog.loading
+{
+	background-image: url(../../images/loader.gif);
+}
+.linkUpDialog .closeButton
+{
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	cursor: pointer;
+}
+.linkUpDialog .node
+{
+	background-color: #D1EACA;
+	border-bottom: 1px solid white;
+	padding: 5px 3px 4px;
+	cursor: pointer;
+}
+.linkUpDialog .node .icon,
+.linkUpDialog .creatingRelationMessage .loader
+{
+	vertical-align: -20%;
+}
+.linkUpDialog .creatingRelationMessage
+{
+	text-align: center;
+}
+
+#objectEditForm .sideLabel
+{
+    float: left;
+}
+#objectEditForm .sideLabel *
+{
+    vertical-align: middle;
+}
+#objectEditForm .visibleWrap
+{
+    margin-right: 60px;
+}
+
+.module-content .collapsableSection
+{
+	position: relative;
+}
+.module-content .collapsableSection .toggleSection
+{
+	position: absolute;
+	top: 4px;
+	right: 3px;
+}
+.module-content .collapsableSection .toggleSection.expand
+{
+	display: none;
+}
+.module-content .collapsableSection.collapsed .toggleSection.expand
+{
+	display: block;
+}
+.module-content .collapsableSection.collapsed .toggleSection.collapse
+{
+	display: none;
+}
+
+.module-content .globalFieldContainer
+{
+	border-bottom: 1px solid white;
+	width: 100%;
+	padding: 10px 5px 0;
+	margin: -5px 0 10px -5px;
+	background: #e3e3e3 url(../../images/globalFieldContainerBgr.png) repeat-x bottom left;
+	background-color: transparent;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.module-content .globalFieldContainer .templateField
+{
+	border-bottom: none;
+}
+.module-content .globalFieldContainer label,
+.module-content #objectEditForm .globalFieldContainer label
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.module-content .globalFieldContainer .labelWrap
+{
+	margin: 0;
+	padding: 3px 0;
+	display: inline-block;
+	min-width: 80px;
+	text-align: right;
+}
+.module-content .globalFieldContainer select
+{
+	width: 158px;
+}
+.module-content .globalFieldContainer .nameWrap,
+.module-content .globalFieldContainer .templateWrap,
+.module-content .globalFieldContainer .rewriteNameWrap,
+.module-content .globalFieldContainer .orderNoWrap,
+.module-content .globalFieldContainer .snapshotsWrap
+{
+	width: 400px;
+	float: left;
+}
+.module-content .globalFieldContainer .templateWrap,
+.module-content .globalFieldContainer .orderNoWrap,
+.module-content .globalFieldContainer .snapshotsWrap
+{
+	width: 250px;
+}
+
+
+.module-content .snapshotsEnabled .globalFieldContainer .nameWrap,
+.module-content .snapshotsEnabled .globalFieldContainer .rewriteNameWrap
+{
+	width: 350px;
+}
+
+.module-content .showRelationPanel .globalFieldContainer .snapshotsWrap
+{
+    display: none;
+}
+
+
+
+
+
+.module-content .globalFieldContainer .rewriteNameWrap
+{
+	overflow: visible;
+}
+.module-content .globalFieldContainer .rewriteNameWrap button
+{
+	margin-left: -28px;
+	vertical-align: -25%;
+	background: white url(../../images/input/inputBgr.gif) repeat-x 0 -3px;
+	padding-right: 1px;
+}
+.module-content .globalFieldContainer .rewriteNameWrap input
+{
+	padding-right: 23px;
+	width: 230px;
+}
+.module-content .globalFieldContainer .rewriteNameWrap .objectUrlPartContainer
+{
+	margin-top: 3px;
+}
+.module-content .globalFieldContainer .rewriteNameWrap a
+{
+	white-space: nowrap;
+	margin-left: 84px;
+}
+.module-content .globalFieldContainer .visibleWrap
+{
+	margin-left: 84px;
+}
+.module-content .globalFieldContainer input[type=checkbox]
+{
+	margin-left: 0;
+}
+
+.module-content .globalFieldContainer.collapsed > div
+{
+	display: none;
+}
+.module-content .globalFieldContainer.collapsed .nameWrap,
+.module-content .globalFieldContainer.collapsed .visibleWrap,
+.module-content .globalFieldContainer.collapsed .clear.persistent
+{
+	display: block;
+}
+.module-content .globalFieldContainer.collapsed .visibleWrap
+{
+	margin-left: 0;
+}
+
+.module-content .filepicker
+{
+	vertical-align: top;
+}
+
+.duplicateRewriteNameWarning
+{
+    display: none;
+    margin: 0 0 0 6px;
+    position: relative;
+    top: 3px;
+}
+.duplicateRewriteName #rewrite_name
+{
+    background: #fe9696;
+}
+.duplicateRewriteName .duplicateRewriteNameWarning
+{
+    display: inline;
+}
+
+
+
+.panelLayout .primaryPanel .content.searchBlock
+{
+    top: 10px;
+    bottom: 10px;
+}
+#contentModule form.searchForm
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: -5px 0 10px -5px;
+    text-align: center;
+}
+form.searchForm input.search
+{
+    padding: 3px 5px;
+}
+form.searchForm.loading input.search
+{
+    background: transparent url(../../images/loader.gif) no-repeat 98% 50%;
+}
+form.searchForm button[type=submit]
+{
+    margin: -2px 0 0 10px;
+    padding: 3px 10px 4px 10px;
+}
+.searchResultsBlock
+{
+    padding-left: 15px;
+}
+.resultsFoundMessage
+{
+    color: #777;
+    margin-bottom: 20px;
+}
+
+ul.searchResultsList li
+{
+    display: block;
+    margin-bottom: 20px;
+}
+ul.searchResultsList li h3
+{
+    margin: 0px;
+    font-size: 1.1em;
+}
+ul.searchResultsList li h3 a:hover
+{
+    text-decoration: none;
+    color: #36F;
+}
+ul.searchResultsList li .frontendLink
+{
+    margin-bottom: 3px;
+}
+ul.searchResultsList li .frontendLink a
+{
+    color: #999;
+    font-size: 11px;
+}
+ul.searchResultsList li .highlight
+{
+    color: #F90;
+}

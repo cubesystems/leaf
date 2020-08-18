@@ -1,0 +1,191 @@
+button, input[type=button], input[type=submit], .button, button[disabled]
+{
+	text-transform: lowercase;
+	padding: 2px 10px 3px 10px;
+	color: black;
+	cursor: pointer;
+	border: 1px solid #adadad;
+	border-right-color: #888686;
+	border-bottom-color: #888686;
+	border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 0px rgba(255,255,255,.6);
+	background: #dcdcdc url(../images/button/buttonBgr.gif) repeat-x top left;
+	vertical-align: middle;
+}
+.button
+{
+	padding: 3px 8px 4px 8px;
+	display: inline-block;
+}
+.button.single
+{
+	margin-right: 10px;
+}
+.button:hover
+{
+	text-decoration: none;
+}
+button[disabled]
+{
+	opacity: .4;
+	cursor: default;
+}
+button img
+{
+	vertical-align: bottom;
+}
+.button img
+{
+	vertical-align: -3px;
+}
+button.icon-and-text img, .button.icon-and-text img,
+button.iconAndText img, .button.iconAndText img
+{
+	margin-right: 5px;
+}
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover
+{
+	background-image: url(../images/button/buttonHoverBgr.png);
+	background-color: #cfcece;
+}
+button.active, 
+button:active, 
+.button.active
+{
+	background-image: url(../images/button/buttonFocusBgr.gif);
+	border-color: #989ea4;
+	border-top-color: #7c8288;
+	border-bottom-color: #a8aeb4;
+}
+button[disabled]:hover, button[disabled]:focus
+{
+	background: #dcdcdc url(../images/button/buttonBgr.gif) repeat-x top left;
+	border: 1px solid #adadad;
+	border-right-color: #888686;
+	border-bottom-color: #888686;
+}
+/* enhancements for gecko 1.9.1+ browsers */
+@-moz-document url-prefix('http://'), url-prefix('https://')
+{
+	/* advanced styling for gecko 1.9.1, like Firefox 3.5 */
+	body:first-of-type button:not(.noStyling),
+	body:first-of-type .button:not(.noStyling),
+	body:first-of-type input[type=submit]:not(.noStyling)
+	{
+		text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+	}
+	body:first-of-type button:focus:not(.noStyling),
+	body:first-of-type .button:focus:not(.noStyling)
+	{
+		outline: none;
+		box-shadow: 0 0 4px 1px #2878D4;
+	}
+	body:first-of-type button:active:not(.noStyling),
+	body:first-of-type .button:active:not(.noStyling),
+	body:first-of-type button.active:not(.noStyling),
+	body:first-of-type .button.active:not(.noStyling),
+	body:first-of-type .button:active:not(.noStyling),
+	body:first-of-type input[type=submit]:focus:not(.noStyling),
+	body:first-of-type input[type=submit].active:not(.noStyling)
+	{
+		background: #B5B5B5;
+		border: 1px solid rgba(0, 0, 0, 0.6);
+		outline: none;
+		box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px, inset rgba(0, 0, 0, 1) 0 1px 3px, rgba(255, 255, 255, 0.4) 0 1px;
+	}
+}
+/* enhancements for webkit browsers */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	body:first-of-type button:not(.noStyling),
+	body:first-of-type .button:not(.noStyling),
+	body:first-of-type input[type=submit]:not(.noStyling)
+	{
+		text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+	}
+	body:first-of-type button:focus:not(.noStyling),
+	body:first-of-type .button:focus:not(.noStyling)
+	{
+		outline-offset: -2px;
+	}
+	body:first-of-type button:active:not(.noStyling),
+	body:first-of-type .button:active:not(.noStyling),
+	body:first-of-type button.active:not(.noStyling),
+	body:first-of-type button:active:not(.noStyling),
+	body:first-of-type .button.active:not(.noStyling),
+	body:first-of-type input[type=submit]:focus:not(.noStyling),
+	body:first-of-type input[type=submit].active:not(.noStyling)
+	{
+		background: #B5B5B5;
+		border: 1px solid rgba(0, 0, 0, 0.6);
+		outline: none;
+		box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px, inset rgba(0, 0, 0, 1) 0 1px 3px, rgba(255, 255, 255, 0.4) 0 1px;
+	}
+}
+
+button.noStyling,
+.button.noStyling,
+button.noStyling:focus
+{
+	background-color: transparent;
+	background-image: none;
+	border: 0 none;
+	padding: 0;
+	box-shadow: none;
+}
+
+button.noStyling::-moz-focus-inner
+{
+    border:0;
+    padding:0;
+}
+
+.button-group,
+.buttonGroup
+{
+	display: inline;
+	margin-right: 25px;
+}
+.button-group.compensate,
+.buttonGroup.compensate
+{
+	padding-top: 4px;
+}
+.button-group.compact button,
+.button-group.compact .button,
+.buttonGroup.compact button,
+.buttonGroup.compact .button
+{
+	padding-left: 5px;
+	padding-right: 2px;
+}
+body .button-group button:not(:first-child),
+body .button-group .button:not(:first-child),
+body .buttonGroup button:not(:first-child),
+body .buttonGroup .button:not(:first-child)
+{
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+@-moz-document url-prefix('http://'), url-prefix('https://')
+{
+	body:first-of-type .button-group button:not(:first-child),
+	body:first-of-type .button-group .button:not(:first-child),
+	body:first-of-type .buttonGroup button:not(:first-child),
+	body:first-of-type .buttonGroup .button:not(:first-child)
+	{
+		border-left: none;
+	}
+}
+.button-group button:not(:last-child),
+.button-group .button:not(:last-child),
+.buttonGroup button:not(:last-child),
+.buttonGroup .button:not(:last-child)
+{
+	border-right-color: #b1b1b1;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+

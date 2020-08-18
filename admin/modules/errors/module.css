@@ -1,0 +1,157 @@
+.errors .date
+{
+	min-width: 125px;
+}
+.errors .content
+{
+	background-color: white;
+	padding: 5px 15px 25px 15px;
+	border: 1px solid #D0D0D0;
+}
+.errors .date li, .errors .ip li, .errors .url li
+{
+    height: 20px;
+}
+.errors .content .title
+{
+	font-weight: bold;
+	font-size: 120%;
+	margin-top: 18px;
+}
+.errors .search-form
+{
+    float: right;
+    width :400px;
+	text-align: right;
+}
+.errors .toolbar-wrap, .errors .toolbar
+{
+	border-width: 0;
+	background-color: transparent;
+}
+.errors .delete_allForm
+{
+	margin: 10px 0;
+    display: block;
+}
+.errors .leafTable td
+{
+	vertical-align: top;
+}
+.errors .tree span
+{
+    display: block;
+    cursor: pointer;
+    width: 15px;
+    margin: 0 auto;
+    height: 15px;
+    background: url(img/arrows.gif) no-repeat 0 -2px;
+}
+.errors .tree span:hover
+{
+    background-position: -32px -2px;
+}
+.errors .tree span.open
+{
+    background-position: -17px -1px;
+}
+.errors .tree span.open:hover
+{
+    background-position: -49px -1px;
+}
+
+.errors .content.view
+{
+	padding: 0;
+	border: 0;
+}
+
+table.leafTable.labelFirstColumn.errorDetails .alternate th,
+table.leafTable.labelFirstColumn.errorDetails .alternate:hover th
+{
+	background-color: #f1f2f3;
+}
+table.errorDetails th
+{
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+	padding: 4px;
+	text-shadow: rgba(255, 255, 255, 0.7) 0 1px;
+}
+
+table.errorDetails .preWrap
+{
+	margin: 0;
+	padding: 0 20px 0 0;
+	max-width: 960px;
+	position: relative;
+	background: #f1f2f3 url(../../images/icons/arrow_down.png) repeat-y top right;
+	cursor: pointer;
+	border: 1px solid #999999;
+}
+table.errorDetails .alternate .preWrap
+{
+	
+}
+table.errorDetails pre
+{
+	font-size: 1.2em;
+	padding: 0.5em;
+	margin: 0;
+	max-width: 960px;
+	max-height: 300px;
+	overflow: auto;
+	
+	background-color: #ffffff;
+	cursor: default;
+}
+table.errorDetails .preWrap.expanded
+{
+	background-image: url(../../images/icons/arrow_up.png);
+}
+table.errorDetails .preWrap.expanded pre
+{
+	max-width: none;
+	max-height: none;
+}
+table.errorDetails .stackTraceOutput > br
+{
+	display: none;
+}
+table.errorDetails .stackTraceOutput table
+{
+	font-size: 1.1em;
+	border-collapse: collapse;
+	
+}
+table.errorDetails .stackTraceOutput table,
+table.errorDetails .stackTraceOutput table td,
+table.errorDetails .stackTraceOutput table th
+{
+	border-color: gray !important;
+	background-color: white;
+}
+table.errorDetails .stackTraceOutput table th
+{
+	text-align: left;
+	background-image: none;
+}
+table.errorDetails .stackTraceOutput table > tbody > tr:first-child,
+table.errorDetails .stackTraceOutput table > tbody > tr:first-child + tr
+{
+	display: none;
+}
+
+.content .fieldBox label
+{
+    font-weight: bold;
+}
+.content .fieldBox .value
+{
+    display: inline;
+}
+.content .blockValue .value
+{
+    display: block;
+}

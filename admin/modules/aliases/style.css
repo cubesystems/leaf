@@ -1,0 +1,825 @@
+iframe
+{
+
+    top: 0;
+    right: 0;
+    position:fixed;
+    background-color: #ffffff;
+    border:1px solid black;
+
+    display:none;
+}
+
+.secondaryPanel .searchForm.loading button[type=submit]
+{
+	background: transparent url(../../images/loader.gif) no-repeat 0px 0px;
+}
+.secondaryPanel .searchForm.loading button[type=submit] img
+{
+	visibility: hidden;
+}
+
+
+.hidden
+{
+    visibility:hidden;
+}
+/* .panelLayout .primaryPanel .content
+{
+    top:50px;
+} */
+
+/* .panelLayout .secondaryPanel
+{
+    width:266px;
+} */
+
+.leafDialog
+{
+    max-height:500px;
+    width:500px;
+}
+.panelLayout.module-aliases .primaryPanel .content .aliasesTable .aliasSearchAutoSeleted td
+{
+    background-color: #7AD528;
+	border-color: #C1AD2F;
+	-webkit-transition: none;
+}
+
+#languagesForm
+{
+	margin:30px;
+}
+
+#nodeT
+{
+	display:none;
+}
+
+#editForm .languages
+{
+    min-width: 65px;
+    padding-right: 6px;
+}
+#editForm .languages.expanded
+{
+    width: 450px;
+}
+#editForm .languages input[type="text"]
+{
+    width: 100%;
+}
+/*#editForm .languages input[type="text"].expanded
+{
+    width:100%;
+}
+*/
+
+
+.collapse
+{
+    display:none;
+}
+
+
+/* #groupList
+{
+	list-style: none;
+	smargin: 10px 0 0 0;
+	padding: 0;
+} */
+.panelLayout.module-aliases .primaryPanel .content .aliasesTable td.translation_name
+{
+	padding-right: 6px;
+}
+.translation_name input[type="text"]
+{
+    width: 100%;
+}
+/* #groupList .active
+{
+	font-weight:bold;
+}
+#groupList li
+{
+	padding: 2px;
+	border: 1px solid transparent;
+	s-moz-border-radius: 3px;
+}
+#groupList li:hover
+{
+	background-color: #eaeaea;
+	border-color: #cecece;
+}*/
+#editForm
+{
+	margin:0 0 0 20px;
+    width:auto;
+}
+
+.operationsBox form
+{
+	display: inline;
+}
+.operationsBox form
+{
+	margin-left: 15px;
+}
+
+
+#importForm input.file
+{
+
+}
+
+#importForm.full input.file
+{
+    display: inline;
+}
+
+#operationsBox button
+{
+    margin-left: 10px;
+}
+
+
+
+/* left panel styling - this is mostly copied from panel-layout.css */
+#menuBottom
+{
+	margin: 0;
+}
+#mainLeafContent
+{
+	margin: 0;
+}
+
+.module-aliases .secondaryPanel .actionsToolbar
+{
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: #DBDCDF #CECFD2 #C6C9D0;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	padding: 5px 5px 2px;
+	margin-bottom: 5px;
+    height:60px;
+}
+.module-aliases .secondaryPanel .actionsToolbar input
+{
+    margin-top:5px;
+    width:100%;
+}
+/* aliases list */
+.secondaryPanel .menuContainer
+{
+	position: absolute;
+	top: 38px;
+	left: 0;
+	right: 0;
+	bottom: 49px;
+	overflow: auto;
+
+	border: 1px solid #BFBFBF;
+	border-width: 1px 0 1px 0;
+	outline: none;
+	background: #D6D7DA url(../../images/left-panel-v-bgr.png) repeat-y left top;
+}
+.secondaryPanel .menuContainer .inner
+{
+	background: transparent url(../../images/left-panel-h-bgr.png) repeat-x top left;
+}
+.secondaryPanel .menuContainer a
+{
+	color: black;
+}
+
+.module-aliases .menuContainer a,
+.module-aliases .menuContainer .a
+{
+	text-decoration: none;
+	padding: 2px 7px 2px 27px;
+	display: block;
+	outline: none;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.module-aliases .menuContainer em
+{
+	font-style: normal;
+}
+.module-aliases .menuContainer a:hover,
+.module-aliases .menuContainer .a:hover,
+.module-aliases .menuContainer .active a,
+.module-aliases .menuContainer .active .a
+{
+	border-color: #a498b3;
+	background: #7c8ea0 url(../../images/submenu-bgr.png) repeat-x top left;
+	color: white;
+}
+.module-aliases .menuContainer a:hover,
+.module-aliases .menuContainer .a:hover,
+.module-aliases .menuContainer .active a:hover,
+.module-aliases .menuContainer .active .a:hover
+{
+	border-color: #a498b3;
+	background-color: #a5b2bf;
+}
+.module-aliases .menuContainer .active a,
+.module-aliases .menuContainer .active .a
+{
+	text-shadow: rgba(0, 0, 0, 0.4) 0 1px;
+	margin-bottom: -1px;
+}
+.module-aliases .menuContainer a:hover,
+.module-aliases .menuContainer .a:hover
+{
+	text-shadow: rgba(0, 0, 0, .6) 0 1px 7px;
+}
+.module-aliases .menuContainer .active a,
+.module-aliases .menuContainer .active .a
+{
+	padding-top: 1px;
+	border-top: 1px solid #8595a5;
+}
+.module-aliases .menuContainer .active a,
+.module-aliases .menuContainer .active .a,
+.module-aliases .menuContainer .active:hover a,
+.module-aliases .menuContainer .active:hover .a
+{
+	border-bottom: 1px solid #e3e3e5;
+}
+.module-aliases .menuContainer a .context,
+.module-aliases .menuContainer .a .context
+{
+	margin: -2px 0 2px;
+	display: block;
+	font-size: .85em;
+	color: #868788;
+	text-shadow: none;
+	font-weight: normal;
+}
+.module-aliases .menuContainer .active a .context,
+.module-aliases .menuContainer .active .a .context
+{
+	color: #eaeaea;
+}
+.module-aliases .menuContainer a:hover .context,
+.module-aliases .menuContainer .a:hover .context
+{
+	color: #f1f1f1;
+}
+.module-aliases .menuContainer .highlight
+{
+	background-color: #59FF6D;
+	scolor: white;
+	border-radius: 2px;
+}
+.module-aliases .menuContainer a:hover .highlight,
+.module-aliases .menuContainer .a:hover .highlight,
+.module-aliases .menuContainer .active .highlight
+{
+	background-color: #10B023;
+}
+.module-aliases .menuContainer .showAll .a
+{
+	padding: 5px 0;
+	color: gray;
+	text-align: center;
+	cursor: pointer;
+}
+.module-aliases .menuContainer .showAll .a:hover,
+.module-aliases .menuContainer .showAll.active .a
+{
+	color: white;
+}
+.module-aliases .menuContainer .showAll.active .a
+{
+	padding-top: 4px;
+}
+
+
+/*** secondary panel ***/
+
+.panelLayout.module-aliases .secondaryPanel
+{
+	line-height: 120%;
+	width: 23%;
+	border-right: 1px solid #9F9F9F;
+}
+.secondaryPanel .searchContainer
+{
+	padding: 9px 5px 7px 5px;
+	sborder-color: #dbdcdf #cecfd2 #c6c9d0 #cecfd2;
+	sborder-width: 0 1px 1px 0;
+	sborder-style: solid;
+	background-color: rgba(255,255,255,.2);
+	display: block;
+	white-space: nowrap;
+}
+.secondaryPanel .searchContainer form
+{
+	padding-right: 27px;
+}
+.secondaryPanel .searchContainer .search
+{
+	width: 100%;
+}
+.module-aliases .secondaryPanel .sectionTitle
+{
+	margin-top: 10px;
+	padding: 0 10px 4px 15px;
+	text-transform: uppercase;
+	font-size: 85%;
+	font-weight: bold;
+	color: black;
+	text-shadow: 0px 1px 0px #f0f0f0;
+}
+.secondaryPanel .actionsContainer .refreshForm
+{
+	float: right;
+}
+
+/*** header ***/
+
+.module-aliases .visibleLanguagesSwitch
+{
+	position: absolute;
+	top: 7px;
+	right: 15px;
+	text-align: right;
+	z-index: 3;
+}
+.module-aliases .visibleLanguagesSwitch button img
+{
+	margin: 0 0 0 8px;
+}
+.module-aliases .visibleLanguagesSwitch ul
+{
+	display: none;
+	text-align: left;
+
+	background-color: #F2F1F1;
+	border: 1px solid gray;
+	border-top: 0;
+	margin: 0 2px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.5);
+}
+.module-aliases .visibleLanguagesSwitch ul label
+{
+	display: block;
+	padding: 0px 4px;
+}
+.module-aliases .visibleLanguagesSwitch ul label:hover
+{
+	background-color: rgba(0,0,0,.1);
+}
+.module-aliases .visibleLanguagesSwitch ul input
+{
+	vertical-align: -15%;
+}
+.module-aliases .header .groupInfo
+{
+	padding-top: 4px;
+	margin-bottom: 7px;
+}
+.module-aliases .header .field
+{
+	swidth: 50%;
+	display: inline-block;
+	padding: 0 20px 0 0;
+}
+.module-aliases .header .field label
+{
+	margin-right: 3px;
+}
+.module-aliases .header .aliasesTableHead
+{
+	swidth: auto;
+	margin-left: -5px;
+	margin-right: -5px;
+	border: 1px solid #ABABAB;
+	border-bottom: 0;
+	background: url(../../images/leafTable/thBgr.gif) repeat-x scroll 0 bottom #F9F9F9;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.module-aliases .aliasesTableHead .th
+{
+	display: inline-block;
+
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #D0D0D0;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+.module-aliases .aliasesTableHead .th:first-of-type
+{
+	border-top-left-radius: 4px;
+}
+
+
+/*** content ***/
+
+body .panelLayout.module-aliases .primaryPanel .content
+{
+	padding: 0 0 20px 0;
+	border-radius: 0;
+	top: 65px;
+	border-top: 0;
+}
+.module-aliases .primaryPanel .content.dragInProgress
+{
+	box-shadow: 0px 0px 8px 2px #724FC1;
+}
+.module-aliases .primaryPanel .content.dragInProgress,
+.module-aliases .primaryPanel .content.dragInProgress input,
+.module-aliases .primaryPanel .content.dragInProgress td
+{
+	background-color: yellow;
+}
+
+/* aliases table */
+.module-aliases table.aliasesTable
+{
+	font-size: 100%;
+    margin-top: -28px;
+}
+.module-aliases .aliasesTable thead
+{
+	visibility: hidden;
+}
+.module-aliases .aliasesTable .codeHeader
+{
+	width: 200px;
+}
+.module-aliases .aliasesTable .deleteHeader
+{
+	min-width: 20px;
+	max-width: 20px;
+	width: 20px;
+}
+.module-aliases .aliasesTable .languageHeader
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+}
+.module-aliases .aliasesTable .languageHeader .name
+{
+	margin: 0 5px;
+}
+
+
+.module-aliases .aliasesTable .languageHeader:hover img
+{
+	opacity: 1;
+}
+
+.module-aliases .aliasesTable .languageHeader .leftArrow
+{
+	background-image: url(../../images/smallArrowLeft.png);
+}
+
+.module-aliases .aliasesTable .languageHeader .rightArrow
+{
+	background-image: url(../../images/smallArrowRight.png);
+}
+
+.module-aliases .aliasesTable .languageHeader.expanded .leftArrow
+{
+	background-image: url(../../images/smallArrowRight.png);
+	float: left;
+	margin: 5px 0 0 5px;
+}
+
+.module-aliases .aliasesTable .languageHeader.expanded .rightArrow
+{
+	background-image: url(../../images/smallArrowLeft.png);
+	float: right;
+	margin: 5px 5px 0 0;
+}
+
+.module-aliases .aliasesTable .th
+{
+	-webkit-transition: width .1s ease-out;
+	-moz-transition: width .1s ease-out;
+	transition: width .1s ease-out;
+}
+
+.panelLayout.module-aliases .primaryPanel .content  .aliasesTable td
+{
+	padding: 0;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: #DDDDDD;
+    text-align:center;
+
+	-webkit-transition: background-color .1s linear;
+	-moz-transition: background-color .2s linear;
+	transition: background-color .2s linear;
+}
+.panelLayout.module-aliases .primaryPanel .content .aliasesTable tr:last-of-type td
+{
+	border-bottom: none;
+}
+.module-aliases .aliasesTable input
+{
+	border-width: 0;
+	background: transparent none;
+}
+.module-aliases .aliasesTable input:focus
+{
+	border-width: 1px;
+	margin: -1px;
+}
+
+.module-aliases .footer.operationsBox
+{
+	left: auto;
+	text-align: right;
+	min-width: 433px;
+}
+.panelLayout.module-aliases .footer.operationsBox .padding
+{
+	padding-left: 0;
+}
+
+.module-aliases.panelLayout .secondaryPanel
+{
+    min-width: 270px;
+}
+
+
+.machineTranslationButtonBox
+{
+    position: absolute;
+    display: none;
+    right: -3px;
+    top: 2px;
+}
+
+.machineTranslationButtonBox button
+{
+    background: #ffffff;
+    width: 19px;
+    height: 16px;
+    text-align: right;
+}
+
+.machineTranslationButton img
+{
+    
+}
+
+.machineTranslationButton:hover img
+{
+    opacity: 1;
+}
+
+
+.machineTranslationButtonBox button img.normal
+{
+    display: inline;
+}
+.machineTranslationButtonBox button img.notAvailable
+{
+    display: none;
+}
+
+.machineTranslationNotAvailable button img.normal
+{
+    display: none;
+}
+
+.machineTranslationNotAvailable button img.notAvailable
+{
+    display: inline;
+}
+
+.machineTranslationNotAvailable button
+{
+    cursor: default;
+}
+
+
+.translationCell .wrap
+{
+    position: relative;
+}
+
+.machineTranslationSelector,
+.machineColumnTranslationSelector
+{
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 0;
+
+    z-index: 50;
+    padding: 3px;
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
+    background-color: #F2F1F1;
+
+    border-color:-moz-use-text-color gray gray;
+    border-style:none solid solid;
+    border-width:0 1px 1px;
+
+    margin:0 2px;
+    text-align:left;
+
+    white-space: nowrap;
+}
+
+.machineTranslationSelector .sourceLanguageLabel,
+.machineColumnTranslationSelector .sourceLanguageLabel
+{
+    padding: 3px;
+}
+.sourceLanguages .sourceLanguage
+{
+    padding: 2px 0;
+}
+.sourceLanguages button
+{
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+}
+.sourceLanguages button:hover
+{
+    background-color: rgba(0,0,0,.1);
+}
+
+.aliasesTable .machineTranslated .translationText,
+.aliasesTable .machineTranslated .machineTranslationButtonBox button.machineTranslationButton
+{
+    background-color: #d1e6ff;
+}
+
+
+.machineColumnTranslationButtonBox
+{
+    position: absolute;
+    right: 2px;
+    top: 5px;
+}
+
+.machineColumnTranslationButtonBox
+{
+	display: none;
+}
+.module-aliases .aliasesTable .languageHeader:hover .machineColumnTranslationButtonBox
+{
+	display: block;
+}
+
+
+.approveColumn img
+{
+    opacity: 0.5;
+}
+
+.approveColumn:hover img
+{
+    opacity: 1;
+}
+
+.machineColumnTranslationButtonBoxTemplate
+{
+    display: none;
+}
+
+.approveColumnButtonBox
+{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: none;
+}
+
+.hasMachineTranslations .approveColumnButtonBox
+{
+    display: block;
+}
+
+
+
+.groupFilterBox
+{
+    float: right;
+    margin-right: 15px;
+}
+
+.groupFilter
+{
+    display: none;
+
+    z-index: 50;
+
+    background-color: #F2F1F1;
+
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 0;
+
+    margin: 0;
+    text-align:left;
+
+
+	position: absolute;
+	bottom: 50px;
+
+	left: 0;
+	right: 0;
+
+    padding: 3px 2px;
+    font-size: 11px;
+}
+
+.groupFilterOpen
+{
+    display: block;
+}
+
+.groupFilter h4
+{
+    margin: 0;
+    padding: 4px 5px 7px 10px;
+
+}
+
+.groupFilter .filterSection
+{
+    border-top: 1px dashed gray;
+    padding: 7px 0 10px 0;
+}
+
+.filterSection .optionBox
+{
+    width: 50%;
+    float: left;
+}
+
+.groupFilter .optionBox *
+{
+    vertical-align: middle;
+}
+
+.groupFilter .optionBox input
+{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.groupFilter .optionBox label
+{
+    display: block;
+    cursor: pointer;
+}
+
+
+.groupFilter .incompleteLanguages
+{
+    clear: both;
+    width: 75%;
+    margin-left: 18px;
+    padding-top: 3px;
+
+}
+
+.groupFilter .onlyIncompleteBox
+{
+    width: auto;
+    float: none;
+}
+
+.groupFilter .incompleteLanguages .optionBox
+{
+    width: 33%;
+    text-transform: uppercase;
+}
+
+.incompleteFilterBox .disabled
+{
+    background-color: transparent;
+}
+
+.incompleteFilterBox .disabled *
+{
+    cursor: default;
+}
+
+
+
+table.updateResults th,
+table.updateResults td
+{
+    text-align: left;
+    background: #D6D7DA;
+    padding: 5px;
+    font-weight: normal;
+}
+
+

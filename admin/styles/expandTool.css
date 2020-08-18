@@ -1,0 +1,30 @@
+.expandTool, button.expandTool, button.expandTool:focus
+{
+	width: 18px;
+	height: 16px;
+	vertical-align: -16%;
+	z-index: 2;
+	position: relative;
+	background-image: url(../images/expandTool/open.png);
+	background-repeat: no-repeat;
+	background-position: 5px 3px;
+	cursor: pointer;
+}
+.expandTool:hover, .expandTool:hover:focus
+{
+	background-image: url(../images/expandTool/openHover.png);
+}
+.expandTool.open, .expandTool.open:focus
+{
+	background-position: 3px 5px;
+	background-image: url(../images/expandTool/close.png);
+}
+.expandTool.open:hover
+{
+	background-image: url(../images/expandTool/closeHover.png);
+}
+.expandTool.loading, .expandTool.open.loading
+{
+	background-image: url(../images/expandTool/loader.gif);
+	background-position: top left;
+}

@@ -1,0 +1,182 @@
+/* basic layout for non-html tables */
+div.leafTable
+{
+	display: table;
+}
+div.leafTable .thead
+{
+	display: table-header-group;
+}
+div.leafTable .tbody
+{
+	display: table-row-group;
+}
+div.leafTable .thead > *,
+div.leafTable .tbody > *
+{
+	display: table-row;
+}
+div.leafTable .thead > * > *,
+div.leafTable .tbody > * > *
+{
+	display: table-cell;
+}
+div.leafTable .thead > a,
+div.leafTable .tbody > a,
+div.leafTable .thead > * > a,
+div.leafTable .tbody > * > a
+{
+	text-decoration: none;
+}
+/* leafTable */
+.leaf-table,
+.leafTable
+{
+	width: 100%;
+	line-height: normal;
+	background-color: white;
+	border: 1px solid #d0d0d0;
+}
+.leaf-table.no-border,
+.leafTable.no-border,
+.leafTable.noBorder
+{
+	border-width: 0px;
+}
+.leafTable.autoWidth
+{
+	width: auto;
+}
+.leaf-table .edit,
+.leafTable .edit
+{
+	width: 30px;
+	text-align: center;
+}
+.leaf-table td, .leaf-table th,
+.leafTable td, .leafTable th,
+div.leafTable .thead > * > *,
+div.leafTable .tbody > * > *
+{
+	padding: 4px;
+}
+.leaf-table td,
+.leafTable td,
+div.leafTable .tbody > * > *
+{
+	border-right: 1px solid #f0f0f0;
+}
+.leaf-table th,
+.leafTable th,
+div.leafTable .thead > * > *
+{
+	background: #F9F9F9 url('../images/leafTable/thBgr.gif') repeat-x 0px bottom;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #D0D0D0;
+	padding: 6px 4px 6px 4px;
+	font-weight: bold;
+	text-align: left;
+	text-shadow: 0px 1px white;
+}
+.leaf-table .alternate,
+.leafTable .alternate,
+.leafTable.alternateRows tbody tr:nth-child(odd),
+div.leafTable .tbody > *:nth-child(odd)
+{
+	background-color: #F7F9FA;
+}
+.leaf-table .last,
+.leaf-table tr > td:last-child,
+.leaf-table tr > th:last-child,
+.leafTable .last,
+.leafTable tr > td:last-child,
+.leafTable tr > th:last-child,
+div.leafTable .thead > * > *:last-child,
+div.leafTable .tbody > * > *:last-child
+{
+	border-right: none;
+}
+.leaf-table .icon-column,
+.leafTable .icon-column
+{
+	width: 20px;
+	padding-right: 0;
+}
+.leaf-table .icon-column .icon,
+.leafTable .icon-column .icon
+{
+	margin-right: 0;
+}
+.leaf-table .center,
+.leafTable .center
+{
+	text-align: center;
+}
+.leaf-table .icon,
+.leafTable .icon
+{
+	vertical-align: -25%;
+	margin-right: 3px;
+}
+.leaf-table.selectable tr:not(.unselectable),
+.leafTable.selectable tr:not(.unselectable),
+div.leafTable .thead > *:not(.unselectable),
+div.leafTable .tbody > *:not(.unselectable)
+{
+	-moz-user-select: none;
+}
+.leaf-table.selectable tr:not(.unselectable):hover,
+.leafTable.selectable tr:not(.unselectable):hover,
+div.leafTable.selectable .tbody > *:not(.unselectable):hover
+{
+	cursor: pointer;
+	background-color: #e4e1f5;
+}
+.leaf-table.selectable tr:not(.unselectable):hover td,
+.leafTable.selectable tr:not(.unselectable):hover td,
+div.leafTable.selectable .tbody > *:not(.unselectable):hover > *
+{
+	border-color: transparent;
+}
+.leaf-table.selectable .selected, .leaf-table.selectable tr.selected:hover,
+.leafTable.selectable .selected, .leafTable.selectable tr.selected:hover,
+div.leafTable.selectable .thead > .selected,
+div.leafTable.selectable .tbody > .selected:hover
+{
+	background: #cac2fa url(../../images/submenu-bgr.png) repeat-x left top;
+}
+.leaf-table.selectable .selected td,
+.leafTable.selectable .selected td,
+div.leafTable.selectable .thead > .selected > *,
+div.leafTable.selectable .tbody > .selected > *
+{
+	border-color: transparent;
+}
+.leafTable.labelFirstColumn tbody tr td:first-child,
+.leafTable.labelFirstColumn tbody tr th:first-child,
+.leafTable.labelFirstColumn tbody tr:hover td:first-child,
+.leafTable.labelFirstColumn tbody tr:hover th:first-child,
+div.leafTable.labelFirstColumn .tbody > * > *:first-child,
+div.leafTable.labelFirstColumn .tbody > *:hover > *:first-child
+{
+	background: #f5f7f8 none;
+	border-right: 1px solid #d0d0d0;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+.leafTable.extraPadding th,
+.leafTable.extraPadding td,
+div.leafTable.extraPadding .thead > *,
+div.leafTable.extraPadding .tbody > *
+{
+	padding: 4px 8px;
+}
+
+
+
+
+
+
+
+
+

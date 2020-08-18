@@ -1,0 +1,10 @@
+.generator .password
+{
+    display: none;
+}
+
+.generator .password input
+{
+    margin-left: 1em;
+    width: 140px;
+}

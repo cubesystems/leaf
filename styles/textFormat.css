@@ -1,0 +1,43 @@
+body
+{
+    padding: 5px;
+    background: #ffffff;
+    color: #000000;
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 87.5%;
+    line-height: 1.4; 
+}
+
+.content h1
+{
+    font-size: 157.143%;
+}
+
+.content h2
+{
+    font-size: 128.571%;
+}
+
+.content h3
+{
+    font-size: 114.286%
+}
+
+.content h4,
+.content h5,
+.content h6
+{
+    font-size: 100%;
+}
+
+.contentImageLeft
+{
+	float:left;
+	margin: 5px 5px 5px 0;
+}
+
+.contentImageRight
+{
+	float:right;
+	margin:5px 0 5px 5px;
+}

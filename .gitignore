@@ -1,0 +1,7 @@
+files/*
+!files/.htaccess
+shared/cache/*
+!shared/cache/.htaccess
+.DS_Store
+._*
+shared/3rdpart/tcpdf/fonts/*cached

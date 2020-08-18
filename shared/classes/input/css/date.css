@@ -1,0 +1,16 @@
+.ui-datepicker-div, #ui-datepicker-div 
+{
+	z-index: 9999;
+}
+.date-field-wrap .localized
+{
+	display: none;
+}
+.javascriptOn .date-field-wrap .localized
+{
+	display: inline;
+}
+.javascriptOn .date-field-wrap .normalized
+{
+	display: none;
+}

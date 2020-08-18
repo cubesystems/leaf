@@ -1,0 +1,338 @@
+@import "input.css";
+@import "button.css";
+html,
+body
+{
+	margin:0;
+	padding:0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body
+{
+	font-size: 0.8em;
+	background-color: #f2f1f1;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+}
+body, a
+{
+	color:#494c48;
+}
+a img
+{
+	border:none;
+}
+.clear
+{
+	clear: both;
+}
+.clearInside:after
+{
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+iframe
+{
+	border:1px solid #CCCCCC;
+}
+a
+{
+	text-decoration:none;
+}
+a:hover
+{
+	color:#3366FF;
+	text-decoration:underline;
+}
+form
+{
+	padding:0; 
+	margin:0;
+}
+
+#menu
+{
+	background: #7B8A98 url(../images/mainMenuBgr.png) repeat-x left bottom;
+}
+#menu ul
+{
+	padding: 0 0 0 18px;
+	list-style: none;
+	margin: 0;
+}
+#menu li
+{
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+#menu li a,
+#leafUserToolbar a
+{
+	display: block;
+	padding: 7px 12px 6px 12px;
+	font-size: 140%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	min-height: 51px;
+}
+#leafUserToolbar a
+{
+	float: left;
+}
+#menu li .active,
+#leafUserToolbar .active
+{
+	background: #a5b2bf url('../images/mainMenuActiveBgr.png') repeat-x top left;
+}
+#menu li a:hover,
+#leafUserToolbar a:hover
+{
+	background: #a5b2bf url('../images/mainMenuHoverBgr.png') repeat-x top left;
+}
+#menu .imageContainer,
+#leafUserToolbar .imageContainer
+{
+	display: block;
+	min-height: 36px;
+}
+#menu li img
+{
+}
+#menu li .nameWrap,
+#leafUserToolbar a span
+{
+	font-size: 0.63em;
+	color: #f2f2f2;
+	text-shadow: 0px 1px 0px black;
+}
+
+#menu li .active .nameWrap, 
+#menu li a:hover .nameWrap,
+#leafUserToolbar .active span,
+#leafUserToolbar a:hover span
+{
+	text-shadow: 0px 1px 0px rgba(255,255,255,.8);
+	color: black;
+}
+#menu li a:hover .nameWrap,
+#leafUserToolbar a:hover span
+{
+	text-shadow: 0px 1px 0px rgba(255,255,255,1);
+}
+#menuBottom
+{
+	border-bottom: 1px solid white;
+	margin-bottom: 10px;
+	clear:both;
+	height: 0px;
+	font-size:0;
+	line-height:0;
+}
+#leafUserToolbar
+{
+	position:absolute;
+	top:0;
+	right: 10px;
+	text-transform:uppercase;
+	text-align: center;
+}
+
+/* objects */
+.objectName
+{
+	width:90%;
+}
+/* headers */
+h1
+{
+	font-size:150%;
+}
+h2
+{
+	font-size:140%;
+}
+h3
+{
+	font-size:130%;
+}
+h4
+{
+	font-size:120%;
+}
+h5
+{
+	font-size:110%;
+}
+h6
+{
+	font-size:100%;
+}
+
+#mainLeafContent
+{
+	clear:both;
+	margin:0 1%;
+}
+
+.dataTable
+{
+    width: 100%;
+}
+.dataTable td,
+.dataTable th
+{
+    padding: 3px;
+}
+.dataTable td
+{
+    text-align: left;
+}
+.dataTable td a
+{
+    display: block;
+}
+.dataTable tr.invisible a
+{
+    color:#8a9088;
+}
+.dataTable th
+{
+	background-color:#d9eed3;
+	color:#8a9088;
+	font-weight: normal;
+	text-align: center;
+}
+
+.dataTable tr:hover
+{
+    background-color:#d9eed3;
+}
+
+ul.block,
+ol.block,
+ul.block li,
+ol.block li
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+
+
+/* toolbar */
+.toolbar-wrap, .toolbar
+{
+	border-width: 1px;
+	border-style: solid;
+}
+.toolbar-wrap
+{
+	margin: 10px 0;
+	background-color: #efeded;
+	border-color: white #c7c5c5 #c7c5c5 #c7c5c5;
+}
+.toolbar
+{
+	padding: 5px 15px;
+	border-color: #c7c5c5 #f9f8f8 white #f9f8f8;
+}
+
+.special-field-wrap,
+.specialFieldWrap
+{
+	display: inline-block;
+}
+.special-field-wrap input,
+.specialFieldWrap input
+{
+	padding-right: 22px;
+	width: 231px;
+}
+.special-field-wrap button,
+.specialFieldWrap button
+{
+	background: transparent none;
+	border: 0;
+	padding: 0;
+	vertical-align: -17%;
+	margin-left: -22px;
+}
+
+/* multiple items block styling */
+.edit .multipleItemsBlock .template
+{
+	display: none;
+} 
+.edit .addItemBlock
+{
+	color: #192c6a;
+}
+.edit .addItemButton,
+.edit .removeItemButton
+{
+	cursor: pointer;
+}
+.edit .removeItemButton[disabled]
+{
+	cursor: default;
+}
+.edit .removeItemButton[disabled] .icon
+{
+	opacity: .5;
+}
+.edit .addItemButton .text,
+.edit .removeItemButton .text
+{
+	text-transform: lowercase;
+}
+.edit .addItemButton:hover .text,
+.edit .removeItemButton:hover .text
+{
+	text-decoration: underline;
+}
+.edit .addItemButton[disabled]:hover .text,
+.edit .removeItemButton[disabled]:hover .text
+{
+	text-decoration: none;
+}
+.edit .addItemBlock .icon
+{
+	margin-right: 5px;
+}
+
+/* some panel layout modifications */
+.panel-layout .left-panel .active a
+{
+	text-shadow: rgba(0, 0, 0, 0.4) 0 1px;
+}
+.panel-layout .left-panel li li:hover a
+{
+	text-shadow: rgba(0, 0, 0, .6) 0 1px 7px;
+}
+body .left-panel .active a,
+body .left-panel .active:hover a
+{
+	margin-bottom: -1px;
+}
+body .left-panel .active a
+{
+	padding-top: 0px;
+	border-top: 1px solid #8595a5;
+}
+body .left-panel .active a,
+body .left-panel .active:hover a
+{
+	border-bottom: 1px solid #e3e3e5;
+}
+
+

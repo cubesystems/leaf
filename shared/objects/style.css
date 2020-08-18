@@ -1,0 +1,52 @@
+#objectEditForm label{
+	display:block;
+	font-weight:bold;
+	margin:4px 0 3px 0;
+	padding:3px;
+	font-size:100%;
+}
+.templateField, #objectEditForm li{
+	padding:0 0 10px 0;
+	border-bottom:1px dotted #999;
+}
+
+.objectNameContainer
+{
+    position: relative;
+}
+.objectNameContainer .firstSaveBtnContainer
+{
+    position: absolute;
+    right: 0;
+    top: 27px;
+    text-align: right;
+    width: 150px;
+}
+.objectNameContainer div
+{
+    margin:4px 0 3px;
+    padding:3px;
+}
+.objectUrlPartContainer,
+.objectUrlPartContainer a,
+.panelLayout .primaryPanel .objectUrlPartContainer a
+{
+	color: #888;
+}
+.objectUrlPart
+{
+	color: #000;
+}
+#objectEditForm .objectNameContainer label
+{
+    display: inline;
+}
+.templateField .objectUrl
+{
+    font-size: 90%; 
+}
+.templateField .objectUrl img
+{
+    position: relative;
+    top: 3px;
+}

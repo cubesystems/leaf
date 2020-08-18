@@ -1,0 +1,1 @@
+<input type="checkbox" id="{$field.input_id|escape}" name="{$field.input_name|escape}" value="1" {if $field.value}checked="checked"{/if} />

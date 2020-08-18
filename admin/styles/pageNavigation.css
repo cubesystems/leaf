@@ -1,0 +1,95 @@
+.primaryPanel .footer .page-navigation-box-wrap,
+.primaryPanel .footer .page-navigation-box
+{
+	display: inline-block;
+}
+.primaryPanel .footer .page-navigation-box
+{
+	border-radius: 8px;
+	box-shadow: 0px 1px 0px white;
+}
+.panelLayout .footer .page-navigation-box .button
+{
+	text-decoration: none;
+	padding: 0 7px 1px;
+	outline: none;
+}
+.page-navigation-box a
+{
+	text-decoration: none;
+	padding: 0 3px;
+	sdisplay: inline-block;
+}
+.page-navigation-box a:hover
+{
+	
+}
+.panelLayout .footer .page-navigation-box .button:focus,
+.panelLayout .footer .page-navigation-box .button.active
+{
+	padding-left: 6px;
+	padding-right: 6px;
+	
+	color: white;
+	text-shadow: 0 1px black;
+}
+.page-navigation-box .page-navigation 
+{
+	display: inline-block;
+	border: none;
+}
+.page-navigation .page
+{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.page-navigation-box .label
+{
+	vertical-align: -7%;
+}
+.page-navigation-box .page-previous, 
+.page-navigation-box .page-next
+{
+	display: inline-block;
+	vertical-align: bottom;
+	font-family: System,Tahoma,Arial,Helvetica,sans-serif;
+}
+
+.page-navigation .button
+{
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+}
+.page-navigation .active .button
+{
+	border-color: #989ea4;
+	border-top-color: #7c8288;
+	sborder-bottom-color: #a8aeb4;
+	background-image: url(../images/button-focus-bgr.gif);
+	background-image: url(../../../images/button-focus-bgr-darker.png);
+	vertical-align: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.page-navigation-box .page-previous .button
+{
+	border-right: 0;
+	border-radius: 8px 0px 0px 8px;
+}
+.page-navigation-box .page-next .button
+{
+	border-left: 0;
+	border-radius: 0px 8px 8px 0px;
+}
+.primaryPanel .footer .page-navigation-box .page-previous .button,
+.primaryPanel .footer .page-navigation-box .page-next .button
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.primaryPanel .footer .page-navigation-box .page-next .button:focus
+{
+	padding-left: 14px;
+}
+

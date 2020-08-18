@@ -1,0 +1,10 @@
+{if $menu}
+    <ul class="block menu">
+        {foreach from=$menu item=item name="menu"}
+            <li class="menuItem{if $smarty.foreach.menu.first} first{/if}{if $smarty.foreach.menu.last} last{/if}{if $item->object_data.active} active{/if}{if $item->object_data.children} hasChildren{/if}">
+                <a href="{$item|orp|escape}">{$item|escape}</a>
+                {include file=menu.stpl menu=$item->object_data.children}
+            </li>
+        {/foreach}
+    </ul>
+{/if}

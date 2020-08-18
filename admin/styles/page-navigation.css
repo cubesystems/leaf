@@ -1,0 +1,42 @@
+.page-navigation-box a
+{
+	text-decoration: none;
+	padding: 0 3px;
+}
+.page-navigation-box a:hover
+{
+	text-decoration: underline;
+}
+.page-navigation-box .page-navigation 
+{
+	stext-align: center;
+	display: inline;
+}
+.page-navigation .page
+{
+	display: inline;
+	vertical-align: bottom;
+}
+.page-navigation .active a
+{
+	text-decoration: underline;
+}
+.page-navigation-box .label
+{
+	vertical-align: -7%;
+}
+.page-navigation-box .page-previous, .page-navigation-box .page-next
+{
+	display: inline;
+	vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+

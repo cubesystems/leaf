@@ -1,0 +1,109 @@
+/* begin footerstickalt */
+html, body
+{
+    height: 100%;
+}
+
+.mainContainer
+{
+    position: relative;
+    min-height: 100%;
+}
+
+* html .mainContainer
+{
+    height: 100%;
+}
+
+.footerContainer
+{
+    position: relative;
+    /*margin: -50px auto 0 auto;*/
+}
+/* end footerstickalt */
+
+
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.languageMenuBox,
+.mainMenuBox,
+.contentBox
+{
+    padding: 1em;
+    border: 1px solid #BCE0B0;
+    margin-bottom: 1em;
+}
+
+.languageMenuBox ul li
+{
+    display: inline;
+    padding-right: 1em;
+}
+
+.mainMenuBox ul ul
+{
+    padding-left: 2em;
+}
+
+
+.footerContainer
+{
+    border: 1px solid #BCE0B0;
+    height: 2em;
+    padding: 2em;
+}
+
+
+/* skip links */
+
+.skipLinks
+{
+    position: absolute;
+    top: -300px;
+    width: 80%;
+    left: 40px;
+    z-index: 20;
+    overflow: visible;
+}
+
+.skipLinks a
+{
+    position: absolute;
+    top: 0;
+    z-index: 30;
+}
+
+.skipLinks a:active,
+.skipLinks a:focus
+{
+    top: 305px;
+    height: 1.6em;
+}
+
+/* error pages */
+body.errorPage  {
+    background: url(../images/error-background.jpg);
+}
+
+body.errorPage .errorContainer {
+    padding: 150px 0;
+    width: 320px;
+    margin: 0 auto;
+    font-size: 1em; 
+    line-height: 2.3em;
+    text-align: right;
+    color: #777
+}
+body.errorPage .errorContainer h1 {
+    text-align: left;
+    font-size: 2em; 
+    color: #363636;
+    padding: 0;
+    margin: 0 0 20px 0;
+}

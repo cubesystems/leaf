@@ -1,0 +1,151 @@
+@import "../style.css";
+.mceResizeBox {
+	width: 10px;
+	height: 10px;
+	border: 1px dotted gray;
+	margin: 0px;
+	padding: 0px;
+}
+.drag{
+	cursor:pointer;
+}
+
+.statusBarResize{
+	height:20px;
+	width:20px;
+	display:block;
+	cursor:pointer;
+	float:right;
+	cursor: se-resize;
+	background:url("modules/content/img/statusbar_resize.gif") no-repeat bottom right;
+}
+
+.hiddenField
+{
+    border-bottom: none;
+    padding: 0;
+}
+
+#objectEditForm li .templateField{
+	border-bottom:1px dotted #ddd;
+}
+.templateField .icon
+{
+	vertical-align: -15%;
+}
+#objectEditForm .sideLabel label{
+	display:inline;
+}
+#objectEditForm .sideLabel{
+	padding:0 0 5px 0;
+}
+.arrayItem{
+	background-color:#f3f3f3;
+	margin:5px 10px !important;
+	padding:5px 10px !important;
+}
+.arrayItem .delHref{
+	float:right;
+	position:relative;
+}
+.arrayItem .arrayItemH{
+	padding:0 0 3px 0;
+}
+.arrayItem .linkField, .arrayItem .textField, .arrayItem .selectField, .arrayItem .checkboxField, .arrayItem .objectlinkField{
+	display:inline;
+	display:inline-block;
+}
+.arrayItem .linkField label, .arrayItem .textField label, .arrayItem .selectField label, .arrayItem .checkboxField label, .arrayItem .objectlinkField label{
+	sdisplay:inline !important;
+	display:block;
+}
+input.datetimeShortInput
+{
+    width: 45px;
+}
+.imageBox{
+	max-height:150px;
+	width:100%;
+	overflow:auto;
+}
+* html .imageBox{
+}
+.richtextField
+{
+    visibility: hidden;
+}
+.hiddenFields
+{
+	display:none;
+}
+.objectPreview
+{
+    font-size: 85%;
+}
+.objectPreview
+{
+    vertical-align: baseline;
+}
+.googleMapContainer
+{
+    margin: 0.5em 0 0.5em 0;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+.googleMapCoordsPreview span
+{
+    font-weight: bold;
+}
+
+.google_map_pointField {
+    position: relative;
+}
+
+.google_map_pointField #mapSearchPanel{
+    position:absolute;
+    top:35px;
+    left:50px;
+}
+
+.google_map_pointField #mapSearchPanel input{
+    width:300px;
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    opacity:0.8;
+}
+
+.google_map_pointField #mapSearchPanel input:focus{
+    opacity:1;
+    outline: none;
+}
+
+.google_map_pointField input.coords {
+    border:1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; 
+    height:24px;
+    line-height:24px;    
+    padding:2px 5px;
+    outline: none;
+    -webkit-appearance:none;
+}
+
+.google_map_pointField button {
+    width:100px;
+    border:1px solid #ccc;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;   
+    height:30px;
+    line-height:24px;     
+    padding:2px 5px;
+    -webkit-appearance:none;
+    margin-left:-5px;
+    margin-top:-5px;
+} 

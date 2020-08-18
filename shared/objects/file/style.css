@@ -1,0 +1,7 @@
+@import "../style.css";
+
+#fileForm{ margin:30px;}
+#fileForm .col1{font-weight:bold; text-align:right; padding:0 5px 0 0;}
+.image{
+	padding:5px;
+}

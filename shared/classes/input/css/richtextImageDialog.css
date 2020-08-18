@@ -1,0 +1,109 @@
+body .richtextImageDialog,
+.richtextImageDialog .ui-tabs-panel
+{
+	border: 0;
+}
+.richtextImageDialog .leftPanel, .richtextImageDialog .previewWrap
+{
+	width: 49%;
+	float: left;
+}
+.richtextImageDialog .previewWrap
+{
+	float: right;
+}
+.richtextImageDialog h3
+{
+	font-size: 85%;
+	font-weight: bold;
+	margin: 5px;
+}
+.richtextImageDialog .ui-tabs-panel
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+.richtextImageDialog .ui-tabs-nav
+{
+	padding: 2px 4px 0 4px;
+}
+.richtextImageDialog .ui-tabs-nav li a
+{
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+.richtextImageDialog .tabs .ui-tabs-panel .inputWrap
+{
+	min-height: 25px;
+}
+.richtextImageDialog .previewWrap, .richtextImageDialog .infoWrap
+{
+	padding: 2px;
+}
+.richtextImageDialog .previewWrap .imageWrap
+{
+	swidth: 100%;
+	height: 220px;
+	overflow: auto;
+}
+.richtextImageDialog .previewWrap .imageWrap.noImage
+{
+	background: transparent url(../images/richtextImageDialog/noImage.png) no-repeat center center;
+}
+.richtextImageDialog .previewWrap .imageWrap.noImage img
+{
+	display: none;
+}
+.richtextImageDialog .infoWrap
+{
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+.richtextImageDialog .inputWrap
+{
+	padding: 3px 10px;
+}
+.richtextImageDialog .inputWrap label
+{
+	float: left;
+	padding-top: 2px;
+}
+.richtextImageDialog .inputWrap input,
+.richtextImageDialog .inputWrap select,
+.richtextImageDialog .inputWrap .selectWrap
+{
+	float: right;
+}
+.richtextImageDialog .inputWrap .specialFieldWrap,
+.richtextImageDialog .inputWrap .fileFieldWrap,
+.richtextImageDialog .inputWrap .selectWrap
+{
+	float: right;
+}
+.richtextImageDialog .inputWrap .specialFieldWrap input,
+.richtextImageDialog .inputWrap .fileFieldWrap input,
+.richtextImageDialog .inputWrap .selectWrap input
+{
+	float: none;
+}
+.richtextImageDialog .inputWrap .fileFieldWrap button
+{
+	margin-top: -1px;
+	margin-bottom: -3px;
+}
+.richtextImageDialog .insertWrap
+{
+	padding: 15px 5px 0 5px;
+	margin: 2px 0;
+	text-align: right;
+}
+.richtextImageDialog .uploadForm.loading 
+{
+	background: transparent url(../images/richtextImageDialog/loader.gif) no-repeat center center;
+}
+.richtextImageDialog .uploadForm.loading .uploadFile
+{
+	visibility: hidden;
+}
+
+

@@ -1,0 +1,32 @@
+.i18nInput .i18nWrap
+{
+	display: inline-block;
+	vertical-align: -115%;
+}
+.i18nInput textarea
+{
+	margin-bottom: 0;
+}
+.i18nInput .languageWrap
+{
+}
+.i18nInput .languageWrap button
+{
+	border: 1px solid #B0AFAF;
+	border-top: 0;
+	border-color: transparent #B0AFAF #999999;
+	border-radius: 0 0 3px 3px;
+	min-width: 35px;
+	text-align: center;
+	color: #585757;
+	margin-right: 4px;
+}
+.i18nInput .languageWrap button.active
+{
+	background-color: white;
+	color: black;
+}
+.i18nInput .languageWrap button:focus
+{
+	outline: 1px dotted gray;
+}

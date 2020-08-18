@@ -1,0 +1,35 @@
+.module-userGroups table.permissionsTable
+{
+    width: 400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+div.module-userGroups table.permissionsTable td.nameColumn
+{
+    padding-left: 20px;
+    border-top: none;
+    border-bottom: none;
+    text-align: left;
+}
+div.module-userGroups table.permissionsTable th.nameColumn,
+div.module-userGroups table.permissionsTable th.nameColumn:hover
+{
+    border-left: none;
+    border-top: 1px solid #E6E6E6;
+}
+div.module-userGroups table.permissionsTable .firstRow td
+{
+    border-bottom: 1px solid #a9a8a8;
+}
+div.module-userGroups table.permissionsTable td
+{
+    width: 100px;
+}
+div.module-userGroups table.permissionsTable td
+{
+    text-align: center;
+}
+div.module-userGroups table.permissionsTable .nameColumn
+{
+    width: 130px;
+}

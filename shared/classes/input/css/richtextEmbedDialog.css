@@ -1,0 +1,132 @@
+body .richtextEmbedDialog,
+.richtextEmbedDialog .ui-tabs-panel
+{
+	border: 0;
+}
+.richtextEmbedDialog .leftPanel, .richtextEmbedDialog .previewWrap
+{
+	width: 49%;
+	float: left;
+	min-height: 250px;
+}
+.richtextEmbedDialog .leftPanel .tabs
+{
+	min-height: 246px;
+}
+.richtextEmbedDialog .leftPanel .tabs .embedCode textarea
+{
+	font-family: Courier New;
+	width: 98%;
+	min-height: 150px;
+}
+.richtextEmbedDialog .previewWrap
+{
+	float: right;
+}
+.richtextEmbedDialog .previewWrap .embedWrap
+{
+	width: 99%;
+	margin: 0 .5%;
+	height: 220px;
+	overflow: auto;
+}
+.richtextEmbedDialog h3
+{
+	font-size: 85%;
+	font-weight: bold;
+	margin: 5px;
+}
+.richtextEmbedDialog .ui-tabs-panel
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+.richtextEmbedDialog .ui-tabs-nav
+{
+	padding: 2px 4px 0 4px;
+}
+.richtextEmbedDialog .ui-tabs-nav li a
+{
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+.richtextEmbedDialog .tabs .ui-tabs-panel .inputWrap
+{
+	min-height: 25px;
+}
+.richtextEmbedDialog .previewWrap, .richtextEmbedDialog .infoWrap
+{
+	padding: 2px;
+}
+.richtextEmbedDialog .previewWrap .imageWrap
+{
+	swidth: 100%;
+	height: 220px;
+	overflow: auto;
+}
+.richtextEmbedDialog .previewWrap .imageWrap.noImage
+{
+	background: transparent url(../images/richtextEmbedDialog/noImage.png) no-repeat center center;
+}
+.richtextEmbedDialog .previewWrap .imageWrap.noImage img
+{
+	display: none;
+}
+.richtextEmbedDialog .infoWrap
+{
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+.richtextEmbedDialog .inputWrap
+{
+	padding: 3px 10px;
+}
+.richtextEmbedDialog .inputWrap label
+{
+	float: left;
+	padding-top: 2px;
+}
+.richtextEmbedDialog .inputWrap input,
+.richtextEmbedDialog .inputWrap select
+{
+	float: right;
+}
+.richtextEmbedDialog .inputWrap .specialFieldWrap,
+.richtextEmbedDialog .inputWrap .fileFieldWrap
+{
+	float: right;
+}
+.richtextEmbedDialog .inputWrap .specialFieldWrap input,
+.richtextEmbedDialog .inputWrap .fileFieldWrap input
+{
+	float: none;
+}
+.richtextEmbedDialog .inputWrap .fileFieldWrap button
+{
+	margin-top: -1px;
+	margin-bottom: -3px;
+}
+.richtextEmbedDialog .insertWrap
+{
+	padding: 15px 5px 0 5px;
+	margin: 2px 0;
+	text-align: right;
+}
+.richtextEmbedDialog .uploadForm.loading 
+{
+	background: transparent url(../images/richtextEmbedDialog/loader.gif) no-repeat center center;
+}
+.richtextEmbedDialog .uploadForm.loading .uploadFile
+{
+	visibility: hidden;
+}
+
+body .mceEditor .mce_embed
+{
+	background-position: -320px -20px;
+}
+
+.mceIframeContainer iframe body .mceItemFlash
+{
+	border: 1px solid black;
+}

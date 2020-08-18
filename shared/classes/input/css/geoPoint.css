@@ -1,0 +1,43 @@
+.geoPointBox
+{
+    position: relative;
+}
+
+
+.geoPointFlashBox,
+.geoPointMapBox
+{
+    margin: 0 0 0.5em 0;
+}
+
+.geoPointBox .clearPoint
+{
+    margin-right: 1em;
+}
+
+.geoPointCoordsPreview .preview
+{
+    font-weight: bold;
+}
+
+.geoPointError
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.geoPointBox .searchBox
+{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    z-index: 10;
+    top: 5px;
+}
+
+.geoPointBox .searchBox input
+{
+    width: 350px;
+}

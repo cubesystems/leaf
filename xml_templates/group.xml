@@ -1,0 +1,5 @@
+<template name="Grupa">
+	<field type="objectlink" name="target">
+		<property name="description" value="Atvērt kā noklusēto" />
+	</field>
+</template>

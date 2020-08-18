@@ -1,0 +1,36 @@
+{strip}
+    {if $processing->hasErrors()}
+        <response status="error">
+            {assign var=errors value=$processing->getErrors()}
+            {foreach item=error from=$errors}
+            <error>
+                <message>
+                    {if $error.message}
+                        {$error.message|escape}
+                    {elseif $error.alias}
+                        {alias code=$error.alias}
+                    {else}
+                        {alias code=$error.code}
+                    {/if}
+                </message>
+                <code>
+                    {$error.code|escape}
+                </code>
+                {assign var=fieldName value=$error.field.name}
+                {if $fieldName}
+                <field_name>
+                    {alias code=$fieldName}
+                </field_name>
+                {/if}
+                {if !in_array($error.field.input_type, array('radio', 'checkbox'))}
+                    <focus>
+                        {$error.field.name|escape}
+                    </focus>
+                {/if}
+            </error>
+            {/foreach}
+        </response>
+    {else}
+        <response status="ok" />
+    {/if}
+{/strip}

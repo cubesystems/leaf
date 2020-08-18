@@ -1,0 +1,141 @@
+html
+{
+    font-size: 100.01%;
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+}
+
+body, input, select, textarea, button
+{
+	font-family: Arial, helvetica, sans-serif;
+}
+
+body
+{
+    font-size: 90%;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+a img
+{
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 100%;
+
+}
+p
+{
+    margin-top: 0;
+}
+
+.contentImageLeft
+{
+	float:left;
+	margin: 5px 5px 5px 0;
+}
+
+.contentImageRight
+{
+	float:right;
+	margin:5px 0 5px 5px;
+}
+
+button, input, textarea, select,
+th, td, pre
+{
+	font-size:100%;
+}
+
+form
+{
+	margin:0;
+	padding:0;
+}
+
+.clear,
+.clearLeft,
+.clearRight
+{
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+    margin-top: -1px;
+}
+.clear
+{
+    clear: both;
+}
+.clearLeft
+{
+    clear: left;
+}
+
+.clearRight
+{
+    clear: right;
+}
+.clearInside:after
+{
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+ul.block,
+ol.block,
+ul.block li,
+ol.block li
+{
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.hiddenText
+{
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+/* atomic classes */
+.fl
+{
+	float: left;
+}
+.fr
+{
+	float: right;
+}
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}

@@ -1,0 +1,90 @@
+.input.selectWrap .trigger
+{
+	vertical-align: -10%;
+	cursor: pointer;
+}
+.input .autocompleteWrap
+{
+	swidth: 250px;
+}
+.input .autocompleteWrap .autocompleteExpandIcon
+{
+	margin: 0 6px 0 -16px;
+	vertical-align: -10%;
+}
+.input .autocompleteInput[disabled] + .autocompleteExpandIcon
+{
+	opacity: .5;
+}
+/* reset some yui styling */
+.input .autocompleteInput
+{
+	width: 233px;
+	position: static;
+	padding-right: 20px;
+}
+.input .autocompleteWrap .resultsContainer
+{
+	width: 256px;
+	margin-top: 1px;
+	display: none;
+}
+/* prevents resultsContainer flickering */
+.input.initiated .autocompleteWrap .resultsContainer
+{
+	display: block;
+}
+.input .autocompleteWrap .resultsContainer .yui-ac-content
+{
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.input .autocompleteWrap .resultsContainer .yui-ac-ft
+{
+	font-size: .85em;
+	text-align: right;
+	padding: 3px 5px;
+	color: gray;
+}
+.input .autocompleteWrap.resultsOverflow .resultsContainer .yui-ac-ft:before
+{
+	content: "...";
+	display: block;
+	text-align: left;
+	sline-height: .1em;
+	font-size: 1.8em;
+	vertical-align: top;
+	height: 4px;
+	margin-top: -15px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+.inputDialog .ui-dialog-content
+{
+	position: relative;
+}
+.inputDialog .content,
+.inputDialog .footer
+{
+	position: absolute;
+	left: 0;
+	right:0;
+}
+.inputDialog .content
+{
+	top: 0;
+	bottom: 40px;
+	padding: 15px 5px;
+	overflow: auto;
+	outline: none;
+	/* copied from inline */
+	background-color: #E8E8E8;
+	border: 1px solid #D0D0D0;
+	border-color: #707070 #ABABAB #CECECE;
+	border-radius: 5px;
+}
+.inputDialog .footer
+{
+	bottom: 2px;
+	text-align: center;
+}

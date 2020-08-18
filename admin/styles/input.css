@@ -1,0 +1,179 @@
+/* base input styling */
+input, select, button
+{
+	font-size:100%;
+}
+input, select, textarea
+{
+	border: 1px solid #ABABAB;
+	border-top-color: #707070;
+	border-bottom-color: #CECECE;
+	padding: 2px 3px;
+	background: white url(../images/input/inputBgr.gif) repeat-x 0 -1px;
+}
+/* richtext styling */
+.richtextField .mceEditor .mceLayout
+{
+	border-color: #ABABAB;
+}
+.richtextField .mceEditor .mceLayout .mceToolbar
+{
+	border-top-color: #707070;
+}
+.richtextField .mceEditor .mceLayout .mceStatusbar
+{
+	border-bottom-color: #CECECE;
+}
+.richtextField .mceEditor .mceLayout .mceButtonActive
+{
+	border-color: #cccccc;
+	background-color: #f0f0ee;
+}
+.richtextField .mceEditor .mceLayout .mceButtonActive:hover
+{
+	background-color: #b2bbd0;
+}
+/* --richtext styling */
+select
+{
+	padding: 1px;
+	cursor: pointer;
+}
+input:focus, textarea:focus, select:focus, .mceLayout.focus
+{
+	outline: 2px solid #CED2D5;
+	outline-radius: 4px;
+	border-color: #989ea4;
+	border-top-color: #7c8288;
+	border-bottom-color: #a8aeb4;
+	outline: 5px auto -webkit-focus-ring-color; /* webkit browsers only */
+}
+/* safari 4+ has as issue with outline color - it is forced over normal tag selector - on this site a few selector 
+   classes are used to force it :)  */
+.safari.is.not.cool  input:focus, 
+.safari.is.not.cool textarea:focus, 
+.safari.is.not.cool select:focus, 
+.safari.is.not.cool .mceLayout.focus
+{
+	outline: 5px auto -webkit-focus-ring-color;
+}
+/* shadow-based outline for gecko 1.9.1+ browsers */
+@-moz-document url-prefix('http://'), url-prefix('https://'), url-prefix('file://')
+{
+	/* this should be under .field selector - kept this way for some time for backwards compatibility */
+	body:first-of-type input:focus, 
+	body:first-of-type .special-field-wrap input:focus, 
+	body:first-of-type textarea:focus, 
+	body:first-of-type select:focus,
+	body:first-of-type .mceLayout.focus
+	{
+		outline: none;
+		box-shadow: 0 0 4px 1px #2878D4;
+	}
+}
+
+/* richtext styling */
+.richtextField .mceEditor .mceLayout.focus .mceToolbar
+{
+	border-top-color: #7c8288;
+	background-color: #e6e7ea;
+}
+.richtextField .mceEditor .mceLayout.focus .mceStatusbar
+{
+	border-bottom-color: #a8aeb4;
+	background-color: #e6e7ea;
+}
+.richtextField .mceEditor .mceLayout.focus .mceButton
+{
+	border-color: #e6e7ea;
+}
+.richtextField .mceEditor .mceLayout.focus .mceButtonActive
+{
+	border-color: #969696;
+	background-color: #b2bbd0;
+}
+.richtextField .mceEditor .mceLayout .mceButton:hover
+{
+	border-color: #969696;
+}
+.richtextField .mceEditor .mceLayout.focus .mceButtonActive:hover
+{
+	border-color: #585858;
+}
+/* --richtext styling */
+
+/* extra infrastructure */
+/* this should be separated */
+
+.field
+{
+	padding-bottom: 15px;
+}
+.field .labelWrap
+{
+	width: 35%;
+	float: left;
+	text-align: right;
+	padding: 3px 5px 0 0;
+}
+.noLabelWrapPadding  .labelWrap
+{
+	padding-top: 0;
+}
+.field .labelWrap .description
+{
+	font-size: 80%;
+	padding-right: 4px;
+	color: #494C48;
+}
+.field label, 
+.field .label
+{
+	font-weight: bold;
+	color: #494C48;
+}
+.labelWrap.label
+{
+	padding-top: 0;
+}
+.field.indentValue .value
+{
+	margin-left: 35%; 
+	padding-left: 5px;
+}
+/* this should be under .field selector - kept this way for some time for backwards compatibility */
+input[type=text], input[type=password]
+{
+	width: 250px;
+}
+input.short
+{
+	width: 50px;
+}
+.field input[type=checkbox] + label,
+.field input[type=radio] + label
+{
+	font-weight: normal;
+	margin-right: 30px;
+}
+.checkboxGroup .field:not(:last-child)
+{
+	padding-bottom: 5px;
+}
+.field.disabled
+{
+	background-color: inherit;
+}
+.field.disabled label,
+.field.disabled .label
+{
+	color: gray;
+}
+.field .trigger
+{
+	vertical-align: -15%;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+

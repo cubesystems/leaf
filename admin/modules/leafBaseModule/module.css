@@ -1,0 +1,565 @@
+/* search form */
+.primaryPanel .header .searchForm
+{
+	float: right;
+	min-width: 262px;
+}
+.primaryPanel .header .searchForm .loadingMessage
+{
+	display: none;
+	color: gray;
+}
+.primaryPanel .header .searchForm.loading .loadingMessage
+{
+	display: inline;
+}
+.primaryPanel .header .searchForm.loading button[type=submit]
+{
+	background: transparent url(../../images/loader.gif) no-repeat 0px 1px;
+}
+.primaryPanel .header .searchForm.loading button[type=submit] img
+{
+	visibility: hidden;
+}
+.primaryPanel .header .searchForm .search
+{
+	margin-left: 3px;
+}
+
+/* flash messages */
+.panelLayout .primaryPanel.hasMessage .header
+{
+    top: 60px;
+}
+.panelLayout .primaryPanel.hasMessage .content
+{
+    top: 92px;
+}
+.primaryPanel .leafMessages
+{
+    padding: 7px 10px;
+}
+.primaryPanel .leafMessage, ul li.leafMessage
+{
+    margin-bottom: 20px;
+    padding: 19px 0 19px 69px;
+    border-radius: 5px;
+    background: transparent none no-repeat 5px center;
+    border: 1px solid transparent;
+}
+.primaryPanel .leafMessage.ok
+{
+    background-color: #f7e297;
+    background-image: url(../../images/tick_48.png);
+}
+.primaryPanel .leafMessage.info
+{
+    background-color: #f0e8f7;
+    background-image: url(../../images/info_48.png);
+}
+.primaryPanel .leafMessage.warning
+{
+    background-color: #eaf7c1;
+    background-image: url(../../images/warning_48.png);
+    border-color: #D6E6A3 #DDEDAA #E5F2B8;
+}
+.primaryPanel .leafMessage a
+{
+    text-decoration: underline;
+}
+
+.primaryPanel > .content div.leafTable .nothingFoundMessage
+{
+	position: absolute;
+	top: 35%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	color: #BFBEBE;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4),0 1px 0px rgba(255, 255, 255, 0.9);
+}
+
+.primaryPanel .footer.center
+{
+	text-align: center;
+}
+body .primaryPanel .footer .padding
+{
+	padding-bottom: 20px;
+}
+.primaryPanel .footer .buttonGroup button
+{
+    -webkit-margin-end: 0;
+    -webkit-margin-start: 0;
+}
+
+.primaryPanel .footer .left > *
+{
+	float: left;
+}
+.primaryPanel .footer .rightOffset > * {
+	margin-right: 20px;
+}
+.primaryPanel .footer .right
+{
+	float: right;
+}
+.primaryPanel .footer .deleteForm
+{
+	display: inline;
+	margin-left: 70px;
+}
+
+.method-all .primaryPanel .footer .createNewItem
+{
+	margin-right: 25px;
+}
+.primaryPanel .footer .stats
+{
+	float: right;
+	font-size: 85%;
+	color: gray;
+	padding-top: 6px;
+}
+
+button.icon-only
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.message
+{
+	border: 1px solid #E4E3E3;
+	border-color: #CECECE #ABABAB #9e9e9e;
+	border-radius: 3px;
+
+	text-align: center;
+	background: white url(../../images/message-bgr.png) repeat-x bottom left;
+	margin: -10px 0 15px;
+}
+.message.inverted
+{
+	background: #908e8e url(../../images/message-bgr-inverted.png) repeat-x top left;
+	border-color: #BDBDBD #8F8E8E #777777;
+}
+.message .inner
+{
+	padding: 3px 25px;
+	background: transparent none no-repeat 3px 3px;
+}
+.message.timeWarning .inner
+{
+	background-image: url(../../images/icons/clock_error.png);
+}
+.message.info .inner
+{
+	background-image: url(../../images/icons/information.png);
+}
+.message.warning .inner,
+.message.error .inner
+{
+	background-image: url(../../images/icons/error.png);
+}
+.message.help .inner
+{
+	background-image: url(../../images/icons/help.png);
+}
+.message.ok .inner
+{
+	background-image: url(../../images/icons/tick.png);
+}
+
+.primaryPanel .header .message
+{
+	margin: -1px 0 0 0;
+	float: right;
+	color: #4c4c4c;
+	font-size: 85%;
+}
+.primaryPanel .header .message .inner
+{
+	padding-right: 10px;
+	padding-left: 30px;
+	background-position: 5px 1px;
+}
+
+.progress-bar-wrap, .progress-bar
+{
+	background: transparent url(../../images/progress-bar-bgr.png) repeat-x center center;
+}
+.progress-bar-wrap
+{
+	background-color: #f6f5f5;
+	overflow: visible;
+	width: 100%;
+	min-width: 100px;
+	position: relative;
+	border: 1px solid #D0D0D0;
+	border-color: #D0D0D0 #C4C4C4 #A5A4A4;
+	border-radius: 3px;
+}
+.progress-bar-wrap .text
+{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.progress-bar-wrap .progress-bar
+{
+	background-color: #a4a1e4;
+	max-width: 100%;
+}
+.progress-bar-wrap .pin
+{
+	position: absolute;
+	bottom: -5px;
+	margin-left: -4px;
+}
+.progress-bar-wrap.overtime .progress-bar
+{
+	background-color: #E93D3D;
+}
+
+
+
+
+/* some global fixes */
+.hidden
+{
+	display: none;
+}
+input[type=checkbox],
+input[type=radio]
+{
+	vertical-align: -15%;
+}
+
+/* view action */
+
+.primaryPanel .content.view
+{
+	padding: 15px 5px;
+
+	background-color: white;
+
+}
+.edit .primaryPanel .content
+{
+	padding: 15px 5px;
+}
+.view .item
+{
+	margin-bottom: 20px;
+}
+.view .item .title
+{
+	font-size: 85%;
+	font-weight: bold;
+}
+.view .item .value
+{
+}
+.view .item em
+{
+	color: gray;
+	font-style: normal;
+	padding-left: 20px;
+	background: transparent url(../../images/icons/error.png) no-repeat top left;
+}
+
+/* edit action */
+
+.edit .primaryPanel  .content
+{
+	background-color: #e8e8e8;
+	padding-top: 20px;
+}
+/* needs to be for all elements */
+.primaryPanel .edit .content input:focus
+{
+	outline-color: #b7c4ce;
+}
+
+.method-confirmDelete .content
+{
+	text-align: center;
+}
+.method-confirmDelete .content .question,
+.method-confirmDelete .content .warning
+{
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+.method-confirmDelete .content .description 
+{
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
+.method-confirmDelete .content form
+{
+	display: inline;
+	margin-right: 15px;
+}
+
+
+
+
+
+.content h3
+{
+	font-size: 115%;
+}
+.content.view .section,
+.edit .content .section
+{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #E1E1E1;
+}
+.edit .content .section
+{
+	border-bottom-color: #b8b7b7;
+}
+/* for mozilla browsers */
+@-moz-document url-prefix('http://'), url-prefix('https://')
+{
+	.edit .content .section
+	{
+		border-bottom-width: 2px;
+		-moz-border-bottom-colors: #f4f3f3 #b8b7b7;
+		border-bottom-colors: #f4f3f3 #b8b7b7;
+	}
+}
+.content.view .section:last-child,
+.edit .content .section:last-child
+{
+	padding-bottom: 25px;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+
+.content .ui-slider-handle,
+.panelLayout .content .ui-slider-handle
+{
+	cursor: pointer;
+}
+
+a.mark
+{
+	border-bottom: 1px solid #d0d0d0;
+	text-decoration: none;
+}
+a.mark:hover
+{
+	border-bottom-color: gray;
+}
+
+
+
+/* custom form styles */
+.dateOrYearFields label
+{
+    font-weight: normal;
+}
+
+.dateOrYearFields input.year
+{
+    width: 3em;
+}
+.dateOrYearFields input.day
+{
+    width: 2em;
+}
+.dateOrYearFields select.month
+{
+    width: 9.6em;
+}
+
+form.edit .multipleItemsBlock
+{
+    margin-left: 35%;
+    margin-bottom: 4px;
+
+}
+form.edit .multipleItemsBlock .addItemBlock
+{
+    text-align: left;
+    padding-top: 3px;
+}
+
+form.edit .multipleItemsBlock .icon
+{
+    cursor: pointer;
+    margin-left: 4px;
+    position: relative;
+    top: 3px;
+}
+/* cancel for buttons */
+form.edit .multipleItemsBlock button .icon
+{
+    margin-left: 0;
+    position: static;
+    top: auto;
+}
+
+form.edit .multipleItemsBlock .itemBlock
+{
+    padding-left: 0px;
+    margin: 3px 3px 6px 0px;
+}
+
+form.edit .hasOneItem .itemBlock .removeItemButton
+{
+    display: none;
+}
+
+form.edit .hasOneItem[data-min-items]:not([data-min-items="1"]) .itemBlock .removeItemButton
+{
+    display: inline;
+}
+
+.content .yui-ac-content
+{
+	box-shadow: 0 2px 3px 0px rgba( 0, 0, 0, .5 );
+}
+
+.createPublisherDialog .labelWrap
+{
+	width: 28%;
+}
+
+
+
+.edit .multipleItemsBlock td,
+.edit .multipleItemsBlock th
+{
+	padding: 3px 30px 3px 0px;
+}
+.threeWayRelations .labelWrap
+{
+	width: 15%;
+	padding-top: 20px;
+}
+form .threeWayRelations .multipleItemsBlock
+{
+	margin-left: 15%;
+}
+.threeWayRelations .multipleItemsBlock th
+{
+	color: gray;
+	font-size: .8em;
+	font-weight: normal;
+	padding-bottom: 0px;
+}
+.threeWayRelations .itemBlock
+{
+	margin: 0;
+}
+.threeWayRelations .itemBlock select
+{
+	width: auto;
+	max-width: 250px;
+}
+.multipleItemsBlock tr.fadeOutInProgress
+{
+	display: table-row !important;
+}
+
+.method-view .field .value > p:first-child
+{
+	margin-top: 0;
+}
+.method-view .field .value > p:last-child
+{
+	margin-bottom: 0;
+}
+
+
+
+.webkitTestBlock
+{
+	display: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	.webkitTestBlock
+	{
+		background-color: black;
+	}
+}
+
+/* left panel section collapsing style */
+.panelLayout .secondaryPanel .sectionTitle
+{
+	background: transparent url(../../images/expandTool/closeShim.png) no-repeat 3px 6px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+.panelLayout .secondaryPanel .sectionTitle:hover
+{
+	background-image: url(../../images/expandTool/closeHoverShim.png);
+}
+.panelLayout .secondaryPanel .collapsed .sectionTitle
+{
+	background: transparent url(../../images/expandTool/openShim.png) no-repeat 5px 4px;
+}
+.panelLayout .secondaryPanel .collapsed .sectionTitle:hover
+{
+	background-image: url(../../images/expandTool/openHoverShim.png);
+}
+.panelLayout .secondaryPanel .collapsed > ul
+{
+	display: none;
+}
+
+.textFieldContainer
+{
+	width: 710px;
+	margin: 0 auto;
+}
+.textFieldContainer .labelWrap
+{
+	float: none;
+	text-align: left;
+	width: auto;
+}
+.textFieldContainer textarea
+{
+	width: 700px;
+	height: 250px;
+}
+.leafDialog  .textFieldContainer
+{
+	width: 95%;
+}
+.leafDialog .textFieldContainer textarea
+{
+	width: 98%;
+	height: 250px;
+	margin: 0 auto;
+}
+
+.panelLayout .primaryPanel .footer div.block
+{
+	position: absolute;
+	top: 5px;
+}
+.panelLayout .primaryPanel .footer .block.leftBlock
+{
+	left: 15px;
+	text-align: left;
+}
+.panelLayout .primaryPanel .footer .block.centerBlock
+{
+	left: 33%;
+	right: 33%;
+}
+.panelLayout .primaryPanel .footer .block.rightBlock
+{
+	right: 15px;;
+}

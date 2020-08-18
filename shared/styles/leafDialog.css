@@ -1,0 +1,67 @@
+/* jQuery UI dialog with extra class: leafDialog */
+.leafDialog
+{
+	opacity: .98;
+	z-index: 200001 !important; /* tinyMCE puts z-index:200000 to it's iframe when in fullscreen mode */
+}
+.leafDialog, .leafDialog .ui-widget
+{
+	font-size: 1em;
+}
+body .leafDialog .ui-dialog-content
+{
+	padding: 0;
+	margin: 4px 1px 15px 1px;
+}
+.leafDialog.visibleOverflow,
+body .leafDialog.visibleOverflow .ui-dialog-content
+{
+	overflow: visible;
+}
+.leafDialog .ui-dialog-buttonpane
+{
+	padding-bottom: 4px;
+}
+.leafDialog.ui-dialog .ui-dialog-container .ui-dialog-content
+{
+	overflow: auto;
+	margin: 7px 7px 10px 7px;
+}
+
+.leafDialog .ui-dialog-titlebar-close
+{
+	outline: none;
+	cursor: pointer;
+}
+.leafDialog.ui-dialog
+{
+	-webkit-box-shadow: 0 5px 14px #464646;
+	box-shadow: 0 5px 14px #464646;
+}
+/* for mozilla browsers */
+@-moz-document url-prefix('http://'), url-prefix('https://')
+{
+	/* cancel opacity for extra performance */
+	.leafDialog
+	{
+		opacity: 1;
+	}
+	/* legacy shadow effect */
+	.leafDialog.ui-dialog
+	{
+		border-width: 1px 4px 4px 4px;
+		border-top-colors: #e1e0e0;
+		border-bottom-colors: #e1e0e0 #b4b4b3 #7f7f80 #4b4c4c;
+		border-left-colors: #ececec #e1e0e0 #b4b4b3 #7f7f80;
+		border-right-colors: #ececec #e1e0e0 #b4b4b3 #7f7f80;
+		border-radius: 7px;
+	}
+	/* shadow since gecko 1.9.1, like Firefox 3.5 */
+	body:only-of-type .leafDialog.ui-dialog
+	{
+		box-shadow: 0 5px 14px #464646;
+		/* reset border-based shadow */
+		border: 1px solid #AAAAAA;
+		border-radius: 4px;
+	}
+}
